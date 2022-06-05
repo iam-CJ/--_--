@@ -7,82 +7,295 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="js/jquery.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/popper.min.js"></script>
+
 </head>
 <body>
     <header>
         <subnav>
-
+            <ul>
+                <li><a href="#">會員專區</a></li>
+                <li><a href="#">我的收藏</a></li>
+                <li><a href="#">購物車</a></li>
+            </ul>
+            <div class="input-group rounded">
+                <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+                <span class="input-group-text border-0" id="search-addon">
+                  <i class="fas fa-search"></i>
+                </span>
+              </div>
         </subnav>
-        <banner>
 
+        <banner>
+            <img src="image/LOGO_transparent.png">
+            <!--圖片用overflow:hidden裁切-->
+            <div style="width: 500px; background-color: gainsboro;"><img src="image/header_00.jpg" width="500px"></div>
+            <p>就。很。Pro
+                是一個專為Procreate
+                使用者設計的網站
+                這裡提供各式各樣的筆刷任君挑選
+            </p>
         </banner>
         <nav>
-
+            <ul>
+                <li><a href="#">筆刷分類</a>
+                    <ul>
+                        <li><a href="#">水彩</a></li>
+                        <li><a href="#">粉、蠟筆</a></li>
+                        <li><a href="#">鉛筆</a></li>
+                        <li><a href="#">特殊筆刷</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">熱門筆刷</a></li>
+                <li><a href="#">免費筆刷</a></li>
+                <li><a href="#">付費筆刷</a></li>
+                <li><a href="#">特殊紙質</a></li>
+                <li><a href="#">筆刷應用教學</a></li>
+                <li><a href="#">聯絡我們</a></li>
+            </ul>
         </nav>
     </header>
     <content>
         <div class="watercolor">
-            <img>
-            <flexbox></flexbox>
+            <div style="width:500px ;background-color:gainsboro">
+                <img src="image/banner_01.png">
+            </div>
+            <div>
+                <!--flexbox-->
+                <h3>水彩</h3>
+                <img src="image/brush_01.png" width="100px">
+                <p>使你的創作溫馨又帶有童趣，隨興發揮、不受侷限，來揮灑顏料吧！</p>
+            </div>
             <aside>
-                <a></a>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
+                <a href="#">查看更多水彩筆刷>>></a>
+                <div>
+                    <!--icon 愛心及購物車-->
+                    <img src="image/content_brush_01.jpg" width="300px">
+                    <div>
+                        <p>筆刷名稱 By作者名</p>
+                        <p>免費</p>
+                    </div>
+                </div>
+                <div>
+                    <!--icon 愛心及購物車-->
+                    <img src="image/content_brush_01.jpg" width="300px">
+                    <div>
+                        <p>筆刷名稱 By作者名</p>
+                        <p>免費</p>
+                    </div>
+                </div>
+                <div>
+                    <!--icon 愛心及購物車-->
+                    <img src="image/content_brush_01.jpg" width="300px">
+                    <div>
+                        <p>筆刷名稱 By作者名</p>
+                        <p>免費</p>
+                    </div>
+                </div>
+                <div>
+                    <!--icon 愛心及購物車-->
+                    <img src="image/content_brush_01.jpg" width="300px">
+                    <div>
+                        <p>筆刷名稱 By作者名</p>
+                        <p>免費</p>
+                    </div>
+                </div>
             </aside>
         </div>
         <div class="crayon">
-            <img>
-            <flexbox></flexbox>
+            <div style="width:500px ;background-color:gainsboro">
+                <img src="image/banner_01.png">
+            </div>
+            <div>
+                <!--flexbox-->
+                <h3>粉、蠟筆</h3>
+                <img src="image/brush_01.png" width="100px">
+                <p>厚塗推薦，讓你的作品更有層次感，一起來塗塗抹抹！</p>
+            </div>
             <aside>
-                <a></a>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
+                <a href="#">查看更多粉、蠟筆刷>>></a>
+                <div>
+                    <!--icon 愛心及購物車-->
+                    <img src="image/content_brush_01.jpg" width="300px">
+                    <div>
+                        <p>筆刷名稱 By作者名</p>
+                        <p>免費</p>
+                    </div>
+                </div>
+                <div>
+                    <!--icon 愛心及購物車-->
+                    <img src="image/content_brush_01.jpg" width="300px">
+                    <div>
+                        <p>筆刷名稱 By作者名</p>
+                        <p>免費</p>
+                    </div>
+                </div>
+                <div>
+                    <!--icon 愛心及購物車-->
+                    <img src="image/content_brush_01.jpg" width="300px">
+                    <div>
+                        <p>筆刷名稱 By作者名</p>
+                        <p>免費</p>
+                    </div>
+                </div>
+                <div>
+                    <!--icon 愛心及購物車-->
+                    <img src="image/content_brush_01.jpg" width="300px">
+                    <div>
+                        <p>筆刷名稱 By作者名</p>
+                        <p>免費</p>
+                    </div>
+                </div>
             </aside>
         </div>
         <div class="pencil">
-            <img>
-            <flexbox></flexbox>
+            <div style="width:500px ;background-color:gainsboro">
+                <img src="image/banner_01.png">
+            </div>
+            <div>
+                <!--flexbox-->
+                <h3>鉛筆</h3>
+                <img src="image/brush_01.png" width="100px">
+                <p>使你的創作溫馨又帶有童趣，隨興發揮、不受侷限，來揮灑顏料吧！</p>
+            </div>
             <aside>
-                <a></a>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
+                <a href="#">查看更多鉛筆筆刷>>></a>
+                <div>
+                    <!--icon 愛心及購物車-->
+                    <img src="image/content_brush_01.jpg" width="300px">
+                    <div>
+                        <p>筆刷名稱 By作者名</p>
+                        <p>免費</p>
+                    </div>
+                </div>
+                <div>
+                    <!--icon 愛心及購物車-->
+                    <img src="image/content_brush_01.jpg" width="300px">
+                    <div>
+                        <p>筆刷名稱 By作者名</p>
+                        <p>免費</p>
+                    </div>
+                </div>
+                <div>
+                    <!--icon 愛心及購物車-->
+                    <img src="image/content_brush_01.jpg" width="300px">
+                    <div>
+                        <p>筆刷名稱 By作者名</p>
+                        <p>免費</p>
+                    </div>
+                </div>
+                <div>
+                    <!--icon 愛心及購物車-->
+                    <img src="image/content_brush_01.jpg" width="300px">
+                    <div>
+                        <p>筆刷名稱 By作者名</p>
+                        <p>免費</p>
+                    </div>
+                </div>
             </aside>
         </div>
         <div class="special">
-            <img>
-            <flexbox></flexbox>
+            <div style="width:500px ;background-color:gainsboro">
+                <img src="image/banner_01.png">
+            </div>
+            <div>
+                <!--flexbox-->
+                <h3>特殊筆刷</h3>
+                <img src="image/brush_01.png" width="100px">
+                <p>使你的創作溫馨又帶有童趣，隨興發揮、不受侷限，來揮灑顏料吧！</p>
+            </div>
             <aside>
-                <a></a>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
+                <a href="#">查看更多特殊筆刷>>></a>
+                <div>
+                    <!--icon 愛心及購物車-->
+                    <img src="image/content_brush_01.jpg" width="300px">
+                    <div>
+                        <p>筆刷名稱 By作者名</p>
+                        <p>免費</p>
+                    </div>
+                </div>
+                <div>
+                    <!--icon 愛心及購物車-->
+                    <img src="image/content_brush_01.jpg" width="300px">
+                    <div>
+                        <p>筆刷名稱 By作者名</p>
+                        <p>免費</p>
+                    </div>
+                </div>
+                <div>
+                    <!--icon 愛心及購物車-->
+                    <img src="image/content_brush_01.jpg" width="300px">
+                    <div>
+                        <p>筆刷名稱 By作者名</p>
+                        <p>免費</p>
+                    </div>
+                </div>
+                <div>
+                    <!--icon 愛心及購物車-->
+                    <img src="image/content_brush_01.jpg" width="300px">
+                    <div>
+                        <p>筆刷名稱 By作者名</p>
+                        <p>免費</p>
+                    </div>
+                </div>
             </aside>
         </div>
         <div class="paper">
-            <h3></h3>
+            <h3>特殊紙質</h3>
             <hr>
             <aside>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
+                <div>
+                    <!--icon 愛心及購物車-->
+                    <img src="image/content_brush_01.jpg" width="300px">
+                    <div>
+                        <p>筆刷名稱 By作者名</p>
+                        <p>免費</p>
+                    </div>
+                </div>
+                <div>
+                    <!--icon 愛心及購物車-->
+                    <img src="image/content_brush_01.jpg" width="300px">
+                    <div>
+                        <p>筆刷名稱 By作者名</p>
+                        <p>免費</p>
+                    </div>
+                </div>
+                <div>
+                    <!--icon 愛心及購物車-->
+                    <img src="image/content_brush_01.jpg" width="300px">
+                    <div>
+                        <p>筆刷名稱 By作者名</p>
+                        <p>免費</p>
+                    </div>
+                </div>
+                <div>
+                    <!--icon 愛心及購物車-->
+                    <img src="image/content_brush_01.jpg" width="300px">
+                    <div>
+                        <p>筆刷名稱 By作者名</p>
+                        <p>免費</p>
+                    </div>
+                </div>
             </aside>
-            <a></a>
+            <a href="#">查看更多特殊紙質>>></a>
         </div>
     </content>
     <footer>
-        <nav></nav>
-        <img src="" alt="">
+        <nav>
+            <ul>
+                <li><a href="#">關於我們</a></li>
+                <li><a href="#">常見問題</a></li>
+                <li><a href="#">相關教學</a></li>
+                <li><a href="#">聯絡我們</a></li>
+            </ul>
+        </nav>
+        <img src="image/LOGO_transparent.png">
     </footer>
     <!--要做一個返回頂部的button-->
+    <a href="#"><img src="image/button_back to top.png"></a>
 </body>
 </html>
