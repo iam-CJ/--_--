@@ -1,0 +1,132 @@
+a:link {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: grey;
+}
+
+/* 56px */
+.toTop-arrow {
+  width: 3.5rem;
+  height: 3.5rem;
+  padding: 0;
+  margin: 0;
+  border: 1;
+  border-radius: 100%;
+  opacity: 0.8;
+  background: white;
+  cursor: pointer;
+  position: fixed;
+  right: 1rem;
+  bottom: 3rem;
+  display: none;
+}
+
+.toTop-arrow::before, .toTop-arrow::after {
+  width: 25px;
+  height: 3px;
+  border-radius: 3px;
+  background: black;
+  position: absolute;
+  content: "";
+}
+
+.toTop-arrow::before {
+  -webkit-transform: rotate(-45deg) translate(0, -50%);
+          transform: rotate(-45deg) translate(0, -50%);
+  left: 0.4rem;
+}
+
+.toTop-arrow::after {
+  -webkit-transform: rotate(45deg) translate(0, -50%);
+          transform: rotate(45deg) translate(0, -50%);
+  right: 0.4rem;
+}
+
+.toTop-arrow:focus {
+  outline: none;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  font-family: 'Noto Serif TC', serif;
+}
+
+body {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: black;
+}
+
+header {
+  margin-top: 10px;
+}
+
+.nav_box {
+  position: fixed;
+  width: 1440px;
+  height: 100px;
+  background-color: white;
+  -webkit-box-shadow: 0 5px 4px -4px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 5px 4px -4px rgba(0, 0, 0, 0.5);
+}
+
+.LOGO {
+  line-height: 100px;
+}
+
+.nav_main_cate ul {
+  padding-top: 3px;
+  position: absolute;
+  list-style: none;
+  display: none;
+  padding-left: 0;
+  z-index: 999;
+  background-color: white;
+}
+
+.nav_main_cate ul li {
+  margin-left: 0;
+  font-size: 1.1rem;
+}
+
+.nav_main_cate:hover ul {
+  display: block;
+}
+
+.nav_sub {
+  width: 300px;
+  margin-left: auto;
+}
+
+.nav_sub ul {
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  margin-bottom: 5px;
+}
+
+.nav_sub ul li {
+  margin-right: 15px;
+}
+/*# sourceMappingURL=a_brushcate.css.map */
