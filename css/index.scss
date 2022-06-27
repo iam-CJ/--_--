@@ -11,6 +11,26 @@ a:hover{
 	color: grey;
 }
 
+.word_white .i_card_body:nth-child(2){
+	color: white;
+}
+
+.word_white .i_card_body:nth-child(2):hover{
+	color: black;
+}
+
+.word_white .i_card_top:hover + .i_card_body:nth-child(2){
+	color: black;
+}
+
+.word_white .i_product_more{
+	color: white;
+}
+
+.word_white .i_product_more:hover{
+	color: grey;
+}
+
 //back-to-top button
 /* 56px */
 .toTop-arrow {
@@ -279,14 +299,6 @@ header{
 		left: 13.5%;
 	}
 
-	//.i_product_bg{
-	//	position: absolute;
-	//	right: 0;
-	//	top: 0;
-	//	margin-top: -100px;
-	//	z-index: -99;
-	//}
-
 	.i_product_info{
 		position: absolute;
 		background-color:white ;
@@ -314,14 +326,13 @@ header{
 		width: 15rem;
 		border-radius: 20px;
 		border: 0;
+		overflow: hidden;
 		.i_card_top{
-			border-radius:20px;
 			height: 240px;
 			width: 240px;
 		}
 		.i_card_body{
 			background-color:transparent;
-			border-radius: 0 0 20px 20px;
 			line-height: 15px;
 			padding-bottom: 0px;
 		}
