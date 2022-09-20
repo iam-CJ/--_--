@@ -1,0 +1,281 @@
+a:link {
+  text-decoration: none;
+  color: black;
+}
+
+aside > ul {
+  font-size: 1.1rem;
+}
+
+aside > ul > li {
+  margin: 25px 0;
+}
+
+aside ul li ul a:link {
+  color: #787878;
+  font-size: 1rem;
+}
+
+aside ul li ul a:visited {
+  color: #787878;
+}
+
+aside ul li ul a:hover {
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: grey;
+}
+
+/* 56px */
+.toTop-arrow {
+  width: 3.5rem;
+  height: 3.5rem;
+  padding: 0;
+  margin: 0;
+  border: 1;
+  border-radius: 100%;
+  opacity: 0.8;
+  background: white;
+  cursor: pointer;
+  position: fixed;
+  right: 1rem;
+  bottom: 3rem;
+  display: none;
+}
+
+.toTop-arrow::before, .toTop-arrow::after {
+  width: 25px;
+  height: 3px;
+  border-radius: 3px;
+  background: black;
+  position: absolute;
+  content: "";
+}
+
+.toTop-arrow::before {
+  transform: rotate(-45deg) translate(0, -50%);
+  left: 0.4rem;
+}
+
+.toTop-arrow::after {
+  transform: rotate(45deg) translate(0, -50%);
+  right: 0.4rem;
+}
+
+.toTop-arrow:focus {
+  outline: none;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  font-family: "Noto Serif TC", serif;
+}
+
+body {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  color: black;
+}
+
+header {
+  margin-top: 10px;
+}
+
+.nav_box {
+  height: 100px;
+  background-color: white;
+  position: fixed;
+  right: 0;
+  width: 100vw;
+  margin-top: -7em;
+  z-index: 999;
+  box-shadow: 0 5px 4px -4px rgba(0, 0, 0, 0.5);
+}
+
+.nav_box_1440 {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav_LOGO {
+  line-height: 100px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.nav_sub {
+  width: 300px;
+  margin-top: 5px;
+  line-height: 30px;
+  margin-left: auto;
+}
+.nav_sub ul {
+  justify-content: right;
+  margin-bottom: 5px;
+}
+.nav_sub ul li {
+  margin-right: 15px;
+}
+
+.form-control {
+  margin-top: auto;
+  margin-bottom: auto;
+  height: 30px;
+}
+
+.nav_main li {
+  margin-right: 20px;
+  font-size: 1.2rem;
+}
+
+.nav_main_cate ul {
+  padding-top: 3px;
+  position: absolute;
+  list-style: none;
+  display: none;
+  padding-left: 0;
+  z-index: 99;
+  background-color: white;
+}
+.nav_main_cate ul li {
+  margin-left: 0;
+  line-height: 30px;
+  font-size: 1rem;
+}
+
+.nav_main_cate:hover ul {
+  display: block;
+}
+
+.all_content {
+  margin-top: 7em;
+}
+
+.border_box {
+  border: black 1px solid;
+  border-radius: 25px;
+  margin-top: 50px;
+}
+.border_box .border_box_text {
+  margin-top: 25px;
+  margin-left: 50px;
+  margin-bottom: 100px;
+}
+.border_box .border_box_text p {
+  font-size: 1.3rem;
+}
+.border_box .border_box_text ul {
+  display: block;
+  margin-left: 25px;
+  margin-bottom: 50px;
+}
+.border_box .border_box_text ul li {
+  list-style: circle;
+  margin: 15px 0px;
+}
+
+div,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#tabs {
+  position: relative;
+  list-style-type: none;
+  margin-top: -35px;
+  margin-left: 30px;
+}
+#tabs li {
+  position: relative;
+  float: left;
+  width: 155px;
+  text-align: center;
+  margin: 0 3px;
+}
+#tabs li a {
+  position: relative;
+  border-top: 1px solid #333;
+  border-left: 1px solid #333;
+  border-right: 1px solid #333;
+  border-radius: 15px 15px 0px 0px;
+  color: #fff;
+  display: block;
+  background-color: rgb(100, 100, 100);
+  padding: 5px 5px 5px 0px;
+  text-decoration: none;
+}
+#tabs li a.active {
+  position: relative;
+  color: black;
+  top: 1px;
+  background-color: #fff;
+}
+
+.tab {
+  display: none;
+}
+
+aside ul {
+  display: block;
+  padding: 0;
+}
+.footer_all {
+  margin-top: 100px;
+}
+
+.nav_bottom ul {
+  justify-content: center;
+  margin-bottom: 8px;
+}
+.nav_bottom ul li {
+  margin: 0px 80px;
+  font-size: 1.3rem;
+}
+
+hr {
+  background-color: black;
+  height: 1px;
+  border: none;
+  margin: 4px 0px;
+}
+
+.nav_bottom_LOGO {
+  display: flex;
+  justify-content: center;
+}
+.nav_bottom_LOGO img {
+  width: 250px;
+}
+
+footer p {
+  text-align: center;
+  color: #7E7E7E;
+  font-size: 0.8rem;
+  margin-bottom: 0.5%;
+}/*# sourceMappingURL=e_teach.css.map */

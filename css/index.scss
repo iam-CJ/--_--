@@ -447,6 +447,7 @@ header{
 
 //footer
 .nav_bottom{
+
 	ul{
 		justify-content: center;
 		margin-bottom: 8px;
@@ -457,11 +458,16 @@ header{
 	}
 }
 
-
-
 hr{
 	background-color:black;
 	height:1px;
 	border:none;
 	margin: 4px 0px;
+}
+
+footer{
+	p{
+		text-align: center;
+		color: grey;
+	}
 }
