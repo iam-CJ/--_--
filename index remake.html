@@ -102,32 +102,28 @@
                     <div class="product_border"></div>
                     <div class="product_bgline" style="top:113.5px;left:-90%;"></div>
                     <div class="product_bgline" style="bottom:95px; right:-90%;"></div>
-                    <div class="product_card_container">
-                        <div class="product_card_row"><script>
-                            var card_single = "";
-                            var card_col = "";
-                            for (i=1; i<=4; i++){
-                                card_single =
-                                `<div class="product_card_col">
-                                    <div class="product_card">
-                                        <!--<div class="product_card_label">
-                                            <iconify-icon inline icon="ph:heart-bold" width="20"></iconify-icon>
-                                            <iconify-icon inline icon="material-symbols:shopping-cart-outline-rounded" width="20"></iconify-icon>
-                                            <iconify-icon inline icon="material-symbols:shopping-cart-rounded" width="20"></iconify-icon>
-                                        </div>-->
-                                        <img src="image/b_freebrush_0${i}.png">
-                                        <div class="product_card_bottom">
-                                            <p>筆刷名稱<br>By作者名</p>
-                                            <div class="product_card_bottom_button"><p>免費</p></div>
-                                        </div>
-                                    </div>
-                                </div>`;
-    
-                                card_col += card_single;
-                            }
-                            document.write(card_col);
-                        </script></div>    
-                    </div>
+                    <script>
+                        var card_single = "";
+                        var card_row = "";
+                        for (i=1; i<=4; i++){
+                            card_single =
+                            `<div class="product_card">
+                            <div style="width: 30px ;height: 94px ;background-color:#ffffff ;clip-path: polygon(100% 0, 100% 100%, 50% 65%, 0 100%, 0 0) ;box-shadow: -5px 3px #474747 ;">
+                                <iconify-icon inline icon="ph:heart-bold" width="20"></iconify-icon>
+                                <iconify-icon inline icon="material-symbols:shopping-cart-outline-rounded" width="20"></iconify-icon>
+                                <iconify-icon inline icon="material-symbols:shopping-cart-rounded" width="20"></iconify-icon>
+                            </div>
+                            <img src="image/b_freebrush_0${i}.png" width="174px">
+                            <div style="background-color:#ffffff;">
+                                <p>筆刷名稱<br>By作者名</p>
+                                <div style="width: 59px;height: 31px;background-color:#495F41 ;"><p>免費</p></div>
+                            </div>
+                            </div>`;
+
+                            card_row += card_single;
+                        }
+                        document.write(card_row);
+                    </script>
                     <a href="a1_water.html">查看更多水彩、水墨筆刷>>></a>
                 </div>
 
