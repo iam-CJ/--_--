@@ -184,6 +184,10 @@ ul{
 	margin-left: auto;
 	margin-right: auto;
 	position: relative;
+	color: $dark_green;
+	:link{
+		color: $dark_green;
+	}
 	.product_bannerpic{
 		width: 575px;
 		height: 307px;
@@ -225,7 +229,7 @@ ul{
 		bottom: 0;
 		width: 791px;
 		height: 493px;
-		border:#495F41 3px solid;
+		border:$dark_green 3px solid;
 		border-radius: 25px;
 		z-index: -2;
 	}
@@ -237,20 +241,24 @@ ul{
 		z-index: -1;
 	}
 	.product_card_container{
-		position: relative;
 		display: flex;
 		justify-content: center;
+		color: $dark_green;
 		.product_card_row{
+			display: flex;
+			position: absolute;
+			bottom: 58px;
 			.product_card_col{
+				margin:auto 9.5px ;
 				.product_card{
 					width: 174px;
 					height: 159px;
-					border:#495F41 2px solid;
+					border:$dark_green 2px solid;
 					border-radius: 10px;
+					overflow: hidden;
 					background-color:#ffffff;
 					img{
-						width:174px;
-						border-radius: 10px 10px 0 0;
+						width:176px;
 					}
 					.product_card_label{
 						width: 30px ;
@@ -264,15 +272,38 @@ ul{
 					}
 					.product_card_bottom{
 						background-color:#ffffff;
+						height: 42px;
+						p{
+							width: fit-content;
+							margin: 0;
+							font-size: 0.8rem;
+							line-height: 1rem;
+							display: flex;
+							float: left;
+						}
 						.product_card_bottom_button{
 							width: 59px;
 							height: 31px;
-							background-color:#495F41 ;
+							border-radius: 7px;
 							color: #ffffff;
+							background-color: $dark_green;
+							display: flex;
+							float:right;
+							p{
+								font-size: 1rem;
+								line-height: 31px;
+								margin-left: auto;
+								margin-right: auto;
+							}
 						}
 					}
 				}
 			}		
 		}
+	}
+	.product_link{
+		position: absolute;
+		bottom: 11px;
+		left: 410.5px;
 	}
 }

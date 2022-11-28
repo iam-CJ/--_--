@@ -59,14 +59,12 @@ a:hover {
 }
 
 .toTop-arrow::before {
-  -webkit-transform: rotate(-45deg) translate(0, -50%);
-          transform: rotate(-45deg) translate(0, -50%);
+  transform: rotate(-45deg) translate(0, -50%);
   left: 0.4rem;
 }
 
 .toTop-arrow::after {
-  -webkit-transform: rotate(45deg) translate(0, -50%);
-          transform: rotate(45deg) translate(0, -50%);
+  transform: rotate(45deg) translate(0, -50%);
   right: 0.4rem;
 }
 
@@ -75,14 +73,12 @@ a:hover {
 }
 
 html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *, *:before, *:after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
-  font-family: 'Noto Serif TC', serif;
+  box-sizing: inherit;
+  font-family: "Noto Serif TC", serif;
 }
 
 body {
@@ -93,8 +89,6 @@ body {
 
 ul {
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   color: black;
 }
@@ -111,8 +105,7 @@ header {
   width: 100vw;
   margin-top: -7em;
   z-index: 999;
-  -webkit-box-shadow: 0 5px 4px -4px rgba(0, 0, 0, 0.5);
-          box-shadow: 0 5px 4px -4px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 5px 4px -4px rgba(0, 0, 0, 0.5);
 }
 
 .nav_box_1440 {
@@ -134,14 +127,10 @@ header {
   line-height: 30px;
   margin-left: auto;
 }
-
 .nav_sub ul {
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
+  justify-content: right;
   margin-bottom: 5px;
 }
-
 .nav_sub ul li {
   margin-right: 15px;
 }
@@ -166,7 +155,6 @@ header {
   z-index: 99;
   background-color: white;
 }
-
 .nav_main_cate ul li {
   margin-left: 0;
   line-height: 30px;
@@ -189,11 +177,8 @@ header {
   margin: 0;
   margin-bottom: 50px;
 }
-
 .banner .banner_wordbox {
   position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   z-index: 50;
   height: 200px;
@@ -206,7 +191,6 @@ header {
   margin-left: -250px;
   margin-top: -20px;
 }
-
 .banner .banner_wordbox h3 {
   position: absolute;
   line-height: 250px;
@@ -217,13 +201,11 @@ header {
   left: 35%;
   top: -30%;
 }
-
 .banner .banner_wordbox h3 img {
   width: 300px;
   height: 60px;
   display: block;
 }
-
 .banner img {
   width: 100%;
   height: 125%;
@@ -234,22 +216,18 @@ header {
 .product_rows {
   margin-top: 15px;
 }
-
 .product_rows .col-3 {
   padding: 0px 3px;
 }
-
 .product_rows .a_product_demo {
   border-radius: 20px;
   border-color: black;
   overflow: hidden;
 }
-
 .product_rows .a_product_demo .a_card_top {
   height: 250px;
   width: 240px;
 }
-
 .product_rows .a_product_demo .a_card_body {
   padding: 0px 10px;
   background-color: white;
@@ -259,18 +237,14 @@ aside ul {
   display: block;
   padding: 0;
 }
-
 .footer_all {
   margin-top: 100px;
 }
 
 .nav_bottom ul {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   margin-bottom: 8px;
 }
-
 .nav_bottom ul li {
   margin: 0px 80px;
   font-size: 1.3rem;
@@ -284,14 +258,9 @@ hr {
 }
 
 .nav_bottom_LOGO {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
-
 .nav_bottom_LOGO img {
   width: 250px;
 }
@@ -301,5 +270,4 @@ footer p {
   color: #7E7E7E;
   font-size: 0.8rem;
   margin-bottom: 0.5%;
-}
-/*# sourceMappingURL=a_brushcate.css.map */
+}/*# sourceMappingURL=a_brushcate.css.map */
