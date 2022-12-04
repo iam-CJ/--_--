@@ -85,23 +85,24 @@
             </div>
 
             <content>
-                <script>
-                    var box_title = ["水彩、水墨","粉筆、蠟筆","鉛筆、麥克筆","特殊及其他筆刷"];
-                    var box_describe = ["使你的創作<br>溫馨又帶有童趣<br>隨興發揮、不受侷限<br>來揮灑顏料吧！","厚塗推薦<br>讓你的作品更有層次感<br>一起來塗塗抹抹！","描繪素描風格<br>手繪筆觸、飽含溫度<br>多種仿真筆刷<br>等你來挑選","各種圖形的筆刷<br>讓你在創作時更加輕鬆<br>一瞬間<br>就能呈現你要的效果！"];
-                </script>
 
-                <div class="product_box">
+                <div class="product_box green">
                     <div class="product_bannerpic">
                         <img src="image/i_banner_01.png">
                     </div>
                     <div class="product_infobox">
                         <h3>水彩、水墨</h3>
                         <img src="image/i_product01_00.png">
-                        <p>使你的創作<br>溫馨又帶有童趣<br>隨興發揮、不受侷限<br>來揮灑顏料吧！</p>
+                        <p>
+                            使你的創作<br>
+                            溫馨又帶有童趣<br>
+                            隨興發揮、不受侷限<br>
+                            來揮灑顏料吧！
+                        </p>
                     </div>
                     <div class="product_border"></div>
-                    <div class="product_bgline" style="top:113.5px;left:-90%;"></div>
-                    <div class="product_bgline" style="bottom:77px; right:-90%;"></div>
+                    <div class="product_bgline" style="top:113.5px;left:-20%;"></div>
+                    <div class="product_bgline" style="bottom:77px; right:-18.75%;"></div>
                     <div class="product_card_container">
                         <div class="product_card_row"><script>
                             var card_single = "";
@@ -129,6 +130,144 @@
                         </script></div>    
                     </div>
                     <div class="product_link"><a href="a1_water.html">查看更多水彩、水墨筆刷>>></a></div>
+                </div>
+
+                <div class="product_box purple">
+                    <div class="product_bannerpic">
+                        <img src="image/i_banner_02.png">
+                    </div>
+                    <div class="product_infobox">
+                        <h3>粉筆、蠟筆</h3>
+                        <img src="image/i_product02_00.png">
+                        <p>
+                            <br>厚塗推薦<br>
+                            讓你的作品更有層次感<br>
+                            一起來塗塗抹抹！
+                        </p>
+                    </div>
+                    <div class="product_border"></div>
+                    <div class="product_bgline" style="bottom:77px; left:-20%;"></div>
+                    <div class="product_bgline" style="top:113.5px; right:-18.75%;"></div>
+                    <div class="product_card_container">
+                        <div class="product_card_row"><script>
+                            var card_single = "";
+                            var card_col = "";
+                            for (i=5; i<=8; i++){
+                                card_single =
+                                `<div class="product_card_col">
+                                    <div class="product_card">
+                                        <!--<div class="product_card_label">
+                                            <iconify-icon inline icon="ph:heart-bold" width="20"></iconify-icon>
+                                            <iconify-icon inline icon="material-symbols:shopping-cart-outline-rounded" width="20"></iconify-icon>
+                                            <iconify-icon inline icon="material-symbols:shopping-cart-rounded" width="20"></iconify-icon>
+                                        </div>-->
+                                        <img src="image/b_freebrush_0${i}.png">
+                                        <div class="product_card_bottom">
+                                            <p>筆刷名稱<br>By作者名</p>
+                                            <div class="product_card_bottom_button"><p>免費</p></div>
+                                        </div>
+                                    </div>
+                                </div>`;
+    
+                                card_col += card_single;
+                            }
+                            document.write(card_col);
+                        </script></div>    
+                    </div>
+                    <div class="product_link"><a href="a2_crayon.html">查看更多粉筆、蠟筆筆刷>>></a></div>
+                </div>
+
+                <div class="product_box gray">
+                    <div class="product_bannerpic">
+                        <img src="image/i_banner_03.png">
+                    </div>
+                    <div class="product_infobox">
+                        <h3>鉛筆、麥克筆</h3>
+                        <img src="image/i_product03_00.png">
+                        <p>
+                            描繪素描風格<br>
+                            手繪筆觸、飽含溫度<br>
+                            多種仿真筆刷<br>
+                            等你來挑選
+                        </p>
+                    </div>
+                    <div class="product_border"></div>
+                    <div class="product_bgline" style="top:113.5px;left:-20%;"></div>
+                    <div class="product_bgline" style="bottom:77px; right:-18.75%;"></div>
+                    <div class="product_card_container">
+                        <div class="product_card_row"><script>
+                            var card_single = "";
+                            var card_col = "";
+                            for (i=1; i<=4; i++){
+                                card_single =
+                                `<div class="product_card_col">
+                                    <div class="product_card">
+                                        <!--<div class="product_card_label">
+                                            <iconify-icon inline icon="ph:heart-bold" width="20"></iconify-icon>
+                                            <iconify-icon inline icon="material-symbols:shopping-cart-outline-rounded" width="20"></iconify-icon>
+                                            <iconify-icon inline icon="material-symbols:shopping-cart-rounded" width="20"></iconify-icon>
+                                        </div>-->
+                                        <img src="image/c_paybrush_0${i}.png">
+                                        <div class="product_card_bottom">
+                                            <p>筆刷名稱<br>By作者名</p>
+                                            <div class="product_card_bottom_button"><p>免費</p></div>
+                                        </div>
+                                    </div>
+                                </div>`;
+    
+                                card_col += card_single;
+                            }
+                            document.write(card_col);
+                        </script></div>    
+                    </div>
+                    <div class="product_link"><a href="a3_pencil.html">查看更多鉛筆、麥克筆筆刷>>></a></div>
+                </div>
+
+
+                <div class="product_box yellow">
+                    <div class="product_bannerpic">
+                        <img src="image/i_banner_04.png">
+                    </div>
+                    <div class="product_infobox">
+                        <h3>特殊及其他筆刷</h3>
+                        <img src="image/i_product04_00.png">
+                        <p>
+                            各種圖形的筆刷<br>
+                            讓你在創作時更加輕鬆<br>
+                            一瞬間<br>
+                            就能呈現你要的效果！
+                        </p>
+                    </div>
+                    <div class="product_border"></div>
+                    <div class="product_bgline" style="bottom:77px; left:-20%;"></div>
+                    <div class="product_bgline" style="top:113.5px; right:-18.75%;"></div>
+                    <div class="product_card_container">
+                        <div class="product_card_row"><script>
+                            var card_single = "";
+                            var card_col = "";
+                            for (i=5; i<=8; i++){
+                                card_single =
+                                `<div class="product_card_col">
+                                    <div class="product_card">
+                                        <!--<div class="product_card_label">
+                                            <iconify-icon inline icon="ph:heart-bold" width="20"></iconify-icon>
+                                            <iconify-icon inline icon="material-symbols:shopping-cart-outline-rounded" width="20"></iconify-icon>
+                                            <iconify-icon inline icon="material-symbols:shopping-cart-rounded" width="20"></iconify-icon>
+                                        </div>-->
+                                        <img src="image/c_paybrush_0${i}.png">
+                                        <div class="product_card_bottom">
+                                            <p>筆刷名稱<br>By作者名</p>
+                                            <div class="product_card_bottom_button"><p>免費</p></div>
+                                        </div>
+                                    </div>
+                                </div>`;
+    
+                                card_col += card_single;
+                            }
+                            document.write(card_col);
+                        </script></div>    
+                    </div>
+                    <div class="product_link"><a href="a4_special.html">查看更多特殊及其他筆刷>>></a></div>
                 </div>
 
                 <!--特殊紙質及問題回報-->
@@ -193,7 +332,7 @@
                     </a>
                 </div>
 
-                <p>建議使用螢幕解析度1920x1080觀看</p>
+                <p>建議使用螢幕解析度1440x1080觀看</p>
 
             </footer>
             <!--返回頂部的button-->

@@ -1,12 +1,4 @@
-$dark_green:#495F41;
-$light_green:#9AC08D;
-$dark_purple:#522376;
-$light_purple:#785494;
-$dark_gray:#444444;
-$light_gray:#CACACA;
-$dark_yellow:#C7A141;
-$light_yellow:#EEE59B;
-
+$bannerBG:#E5E2E1;
 
 a:link{
     text-decoration: none;
@@ -59,6 +51,22 @@ a:hover{
 html{
     box-sizing: border-box;
 	width: 100%;
+}
+
+@media screen and (max-width:720px) and (min-width:390px) {
+	
+}
+
+@media screen and (max-width:1024px) and (min-width:721px) {
+	
+}
+
+@media screen and (max-width:1440px) and (min-width:1025px) {
+	
+}
+
+@media screen and (max-width:1920px) and (min-width:1441px) {
+	
 }
 
 *,*:before,*:after {
@@ -177,17 +185,150 @@ ul{
 	}	
 }
 
+.green{
+	$dark_green:#495F41;
+	$light_green:#9AC08D;
+	color:$dark_green;
+
+	:link{
+		color:$dark_green;
+	}
+	a:visited{
+		color:$dark_green;
+	}
+	a:active{
+		color:$light_green;
+	}
+
+	.product_bgline{
+		background-color:$light_green;
+	}
+
+	.product_border{
+		border:$dark_green 3px solid;
+	}
+
+	.product_card_container{
+	color: $dark_green;
+		.product_card{
+			border:$dark_green 2px solid;
+		}
+		.product_card_bottom_button{
+			background-color: $dark_green;
+		}
+	}
+
+}
+
+.purple{
+	$dark_purple:#522376;
+	$light_purple:#785494;
+	color:$dark_purple;
+	:link{
+		color:$dark_purple;
+	}
+	a:visited{
+		color:$dark_purple;
+	}
+	a:active{
+		color:$light_purple;
+	}
+
+	.product_bgline{
+		background-color:$light_purple;
+	}
+
+	.product_border{
+		border:$dark_purple 3px solid;
+	}
+
+	.product_card_container{
+	color: $dark_purple;
+		.product_card{
+			border:$dark_purple 2px solid;
+		}
+		.product_card_bottom_button{
+			background-color: $dark_purple;
+		}
+	}
+
+}
+
+.gray{
+	$dark_gray:#444444;
+	$light_gray:#CACACA;
+	color:$dark_gray;
+	:link{
+		color:$dark_gray;
+	}
+	a:visited{
+		color:$dark_gray;
+	}
+	a:active{
+		color:$light_gray;
+	}
+	.product_bgline{
+		background-color:$light_gray;
+	}
+
+	.product_border{
+		border:$dark_gray 3px solid;
+	}
+
+	.product_card_container{
+	color: $dark_gray;
+		.product_card{
+			border:$dark_gray 2px solid;
+		}
+		.product_card_bottom_button{
+			background-color: $dark_gray;
+		}
+	}
+
+}
+
+.yellow{
+	$dark_yellow:#C7A141;
+	$light_yellow:#EEE59B;
+	color:$dark_yellow;
+	:link{
+		color:$dark_yellow;
+	}
+	a:visited{
+		color:$dark_yellow;
+	}
+	a:active{
+		color:$light_yellow;
+	}
+
+	.product_bgline{
+		background-color:$light_yellow;
+	}
+
+	.product_border{
+		border:$dark_yellow 3px solid;
+	}
+
+	.product_card_container{
+	color: $dark_yellow;
+		.product_card{
+			border:$dark_yellow 2px solid;
+		}
+		.product_card_bottom_button{
+			background-color: $dark_yellow;
+		}
+	}
+
+}
+
+
 .product_box{
 	width: 1024px;
 	height: 545px;
 	margin-top:20px ;
 	margin-left: auto;
 	margin-right: auto;
-	position: relative;
-	color: $dark_green;
-	:link{
-		color: $dark_green;
-	}
+	position: relative;	
 	.product_bannerpic{
 		width: 575px;
 		height: 307px;
@@ -209,7 +350,6 @@ ul{
 		right: 141.5px;
 		position: absolute;
 		background-color: #ffffff;
-		color: $dark_green;
 		h3{
 			text-align: center;
 		}
@@ -229,21 +369,20 @@ ul{
 		bottom: 0;
 		width: 791px;
 		height: 493px;
-		border:$dark_green 3px solid;
 		border-radius: 25px;
 		z-index: -2;
+
 	}
 	.product_bgline{
-		width: 150%;
+		width: 80%;
 		height: 120px;
-		background-color:$light_green;
 		position: absolute;
 		z-index: -1;
+		overflow: hidden;
 	}
 	.product_card_container{
 		display: flex;
 		justify-content: center;
-		color: $dark_green;
 		.product_card_row{
 			display: flex;
 			position: absolute;
@@ -253,7 +392,6 @@ ul{
 				.product_card{
 					width: 174px;
 					height: 159px;
-					border:$dark_green 2px solid;
 					border-radius: 10px;
 					overflow: hidden;
 					background-color:#ffffff;
@@ -276,6 +414,8 @@ ul{
 						p{
 							width: fit-content;
 							margin: 0;
+							margin-top: 3px;
+							margin-left: 8px;
 							font-size: 0.8rem;
 							line-height: 1rem;
 							display: flex;
@@ -286,12 +426,14 @@ ul{
 							height: 31px;
 							border-radius: 7px;
 							color: #ffffff;
-							background-color: $dark_green;
 							display: flex;
 							float:right;
+							margin-top: 3px;
+							margin-right:2px;
 							p{
 								font-size: 1rem;
 								line-height: 31px;
+								margin-top: 0;
 								margin-left: auto;
 								margin-right: auto;
 							}
