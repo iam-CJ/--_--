@@ -320,7 +320,15 @@ ul{
 	}
 
 }
+.right{
+	.product_bannerpic{
+		right: 141.5px;
+	}
+	.product_infobox{
+		left: 135.5px;
+	}
 
+}
 
 .product_box{
 	width: 1024px;
@@ -373,13 +381,14 @@ ul{
 		z-index: -2;
 
 	}
+
 	.product_bgline{
-		width: 80%;
+		width: 50.2vw;
 		height: 120px;
 		position: absolute;
 		z-index: -1;
-		overflow: hidden;
 	}
+
 	.product_card_container{
 		display: flex;
 		justify-content: center;

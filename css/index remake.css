@@ -284,6 +284,13 @@ ul {
   background-color: #C7A141;
 }
 
+.right .product_bannerpic {
+  right: 141.5px;
+}
+.right .product_infobox {
+  left: 135.5px;
+}
+
 .product_box {
   width: 1024px;
   height: 545px;
@@ -336,11 +343,10 @@ ul {
   z-index: -2;
 }
 .product_box .product_bgline {
-  width: 80%;
+  width: 50.2vw;
   height: 120px;
   position: absolute;
   z-index: -1;
-  overflow: hidden;
 }
 .product_box .product_card_container {
   display: flex;
