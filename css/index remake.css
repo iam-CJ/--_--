@@ -479,7 +479,7 @@ ul {
   width: 790px;
   height: 510px;
   background-color: #F4F4F4;
-  margin: 80px auto 80px auto;
+  margin: 80px auto 60px auto;
   display: flex;
 }
 .contact_box .contact_box_inside {
@@ -501,4 +501,26 @@ ul {
 .contact_box .contact_box_inside p {
   margin-top: 10px;
   line-height: 40px;
+}
+
+footer .nav_bottom ul {
+  justify-content: center;
+  margin-bottom: 3px;
+}
+footer .nav_bottom ul li {
+  margin: auto 50px;
+}
+footer .nav_hr {
+  width: 1024px;
+  border: #000000 1px solid;
+  border-style: solid none none none;
+  margin: 3px auto 6px auto;
+}
+footer .LOGO {
+  display: flex;
+  justify-content: center;
+}
+footer p {
+  color: #d6d6d6;
+  text-align: center;
 }/*# sourceMappingURL=index remake.css.map */

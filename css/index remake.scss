@@ -583,7 +583,7 @@ ul {
 	width: 790px;
 	height: 510px;
 	background-color: #F4F4F4;
-	margin:80px auto 80px auto;
+	margin:80px auto 60px auto;
 	display: flex;
 	.contact_box_inside{
 		width: 474px;
@@ -605,5 +605,31 @@ ul {
 			line-height: 40px;
 		}
 		
+	}
+}
+
+footer{
+	.nav_bottom{
+		ul{
+			justify-content: center;
+			margin-bottom: 3px;
+			li{
+				margin: auto 50px;
+			}
+		}
+	}
+	.nav_hr{
+		width: 1024px;
+		border: #000000 1px solid;
+		border-style: solid none none none;
+		margin:3px auto 6px auto;
+	}
+	.LOGO{
+		display: flex;
+		justify-content: center;
+	}
+	p{
+		color: #d6d6d6;
+		text-align: center;
 	}
 }
