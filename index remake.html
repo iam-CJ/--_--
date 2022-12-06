@@ -271,32 +271,39 @@
                 </div>
 
                 <!--特殊紙質及問題回報-->
-                <!--
-                    <div class="i_paper">
-                        <h3>特殊紙質</h3>
-                        <hr>
-                        <div class="row i_paper_row">
-                            <div class="col-3">
-                                <a href="#"><div class="card i_paper_demo">
-                                    icon 愛心及購物車
-                                    <i class="fa-regular fa-heart"></i>
-                                    <i class="fa-solid fa-cart-arrow-down"></i>
-                                    <i class="fa-solid fa-cart-shopping"></i>
-    
-                                    <img class="card-img-top i_card_top" src="image/i_product05_01.PNG" alt="Card image cap">
-                                    <div class="card-body i_card_body">
-                                        <p style="float:left;" class="card-text">紙質名稱<br>By作者名</p>
-                                        <p style="float:right;font-size: 1.1rem;">免費</p>
+                
+                <div class="paper_box">
+                    <h3>特殊紙質</h3>
+                    <div class="hr"></div>
+                    <div class="paper_card_row"><script>
+                        var card_single = "";
+                        var card_col = "";
+                        for (i=1; i<=4; i++){
+                            card_single =
+                            `<div class="paper_card_col">
+                                <div class="paper_card">
+                                    <!--<div class="paper_card_label">
+                                        <iconify-icon inline icon="ph:heart-bold" width="20"></iconify-icon>
+                                        <iconify-icon inline icon="material-symbols:shopping-cart-outline-rounded" width="20"></iconify-icon>
+                                        <iconify-icon inline icon="material-symbols:shopping-cart-rounded" width="20"></iconify-icon>
+                                    </div>-->
+                                    <img src="image/d_paper_0${i}.png">
+                                    <div class="paper_card_bottom">
+                                        <p>紙質名稱<br>By作者名</p>
+                                        <div class="paper_card_bottom_button"><p>免費</p></div>
                                     </div>
-                                </div></a>
-                            </div>
-                        </div>
+                                </div>
+                            </div>`;
 
-                        <div class="i_paper_more"><a href="d_paper.html">查看更多特殊紙質>>></a></div>
-                    </div>
+                            card_col += card_single;
+                        }
+                        document.write(card_col);
+                    </script></div>    
+                    <div class="paper_link"><a href="d_paper.html">查看更多特殊紙質>>></a></div>
+                </div>
             </content>
             
-
+            <!--
             <content>
                 <div class="i_contact">
                     <div class="i_contact_box">

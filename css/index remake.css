@@ -28,7 +28,8 @@ a:hover {
   display: none;
 }
 
-.toTop-arrow::before, .toTop-arrow::after {
+.toTop-arrow::before,
+.toTop-arrow::after {
   width: 25px;
   height: 3px;
   border-radius: 3px;
@@ -56,7 +57,9 @@ html {
   width: 100%;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
   font-family: "Noto Serif TC", serif;
 }
@@ -181,7 +184,7 @@ ul {
 .green a:visited {
   color: #495F41;
 }
-.green a:active {
+.green a:hover {
   color: #9AC08D;
 }
 .green .product_bgline {
@@ -209,8 +212,8 @@ ul {
 .purple a:visited {
   color: #522376;
 }
-.purple a:active {
-  color: #785494;
+.purple a:hover {
+  color: #a180ba;
 }
 .purple .product_bgline {
   background-color: #785494;
@@ -237,7 +240,7 @@ ul {
 .gray a:visited {
   color: #444444;
 }
-.gray a:active {
+.gray a:hover {
   color: #CACACA;
 }
 .gray .product_bgline {
@@ -265,7 +268,7 @@ ul {
 .yellow a:visited {
   color: #C7A141;
 }
-.yellow a:active {
+.yellow a:hover {
   color: #EEE59B;
 }
 .yellow .product_bgline {
@@ -416,6 +419,58 @@ ul {
 }
 .product_box .product_link {
   position: absolute;
+  text-decoration: underline;
   bottom: 11px;
   left: 410.5px;
+}
+
+.paper_box {
+  width: 1024px;
+  margin-top: 62px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.paper_box .hr {
+  width: 530px;
+  border: #000000 1px solid;
+  border-style: solid none none none;
+  margin: 6px auto 19px auto;
+}
+.paper_box .paper_card_row {
+  display: flex;
+  margin: auto 18.5px;
+  justify-content: center;
+}
+.paper_box .paper_card_row .paper_card_col {
+  margin: auto 10.5px;
+}
+.paper_box .paper_card_row .paper_card_col .paper_card img {
+  width: 210px;
+  height: 200px;
+}
+.paper_box .paper_card_row .paper_card_col .paper_card .paper_card_bottom {
+  width: 210px;
+  height: 44px;
+  display: flex;
+  position: relative;
+}
+.paper_box .paper_card_row .paper_card_col .paper_card .paper_card_bottom p {
+  margin-top: 8px;
+  line-height: 17px;
+}
+.paper_box .paper_card_row .paper_card_col .paper_card .paper_card_bottom .paper_card_bottom_button {
+  position: absolute;
+  display: flex;
+  right: 0;
+}
+.paper_box .paper_card_row .paper_card_col .paper_card .paper_card_bottom .paper_card_bottom_button p {
+  font-size: 1.3rem;
+  line-height: 44px;
+  margin-top: 0;
+  margin: auto;
+}
+.paper_box .paper_link {
+  text-decoration: underline;
+  margin-top: 10px;
 }/*# sourceMappingURL=index remake.css.map */
