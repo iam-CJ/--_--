@@ -472,5 +472,33 @@ ul {
 }
 .paper_box .paper_link {
   text-decoration: underline;
+  margin-top: 20px;
+}
+
+.contact_box {
+  width: 790px;
+  height: 510px;
+  background-color: #F4F4F4;
+  margin: 80px auto 80px auto;
+  display: flex;
+}
+.contact_box .contact_box_inside {
+  width: 474px;
+  height: 423px;
+  margin: auto auto;
+  padding-top: 45px;
+  background-color: #FFFFFF;
+  box-shadow: inset 0px 0px 5px 5px #F4F4F4;
+}
+.contact_box .contact_box_inside img {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+.contact_box .contact_box_inside h3, .contact_box .contact_box_inside p {
+  text-align: center;
+}
+.contact_box .contact_box_inside p {
   margin-top: 10px;
+  line-height: 40px;
 }/*# sourceMappingURL=index remake.css.map */
