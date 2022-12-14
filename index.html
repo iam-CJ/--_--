@@ -15,487 +15,381 @@
     <!--Google Font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@600&display=swap" rel="stylesheet">
+        <!--Noto Sans TC-->
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap" rel="stylesheet">
     <!--icon-->
-    <script defer src="js/all.js"></script>
-    <script defer src="https://pro.fontawesome.com/releases/v6.0.0/js/all.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
+    <script src="js/iconify-icon.min.js"></script>
 </head>
 
-    <body>
-            <header>
-                <nav class="nav_sub">
-                    <ul>
-                        <li><a href="#"><i class="fa-solid fa-image-portrait" style="margin-right:5px ;"></i>會員專區</a></li>
-                        <li><a href="#"><i class="fa-solid fa-heart" style="margin-right:5px;"></i>我的收藏</a></li>
-                    </ul>
-        
-                    <div class="input-group rounded">
-                        <input type="search" class="form-control rounded-pill" style="background-color: #C4C4C4;" placeholder="搜尋…" aria-label="Search" aria-describedby="search-addon" />
-                        <button type="button" class="btn btn-default" aria-label="Left Align">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                        </button>
-                    </div>
-                </nav>
-                
-                <!--LOGO-->
-                <div class="LOGO">
-                        <a href="index.html">
-                            <img src="image/LOGO_trans.png" width="300px">
-                        </a>        
+<body>
+    <header>
+        <div class="div_1024">
+            <div class="top_subnav">
+                <ul>
+                    <li><a href=""><iconify-icon inline icon="carbon:user-avatar-filled" width="20px"></iconify-icon>會員專區</a></li>
+                    <li><a href="g_like.html"><iconify-icon inline icon="ph:heart-fill" width="20px"></iconify-icon>我的收藏</a></li>
+                    <li><a href=""><iconify-icon inline icon="carbon:user-avatar-filled" width="30px"></iconify-icon></a></li>
+                    <li><a href="g_like.html"><iconify-icon inline icon="ph:heart-fill" width="30px"></iconify-icon></a></li>
+                </ul>
+    
+                <div class="input-group rounded">
+                    <input type="search" class="form-control rounded-pill" style="background-color: #C4C4C4;" placeholder="搜尋…" aria-label="Search" aria-describedby="search-addon" />
+                    <button type="button" class="btn btn-default" aria-label="Left Align">
+                        <iconify-icon icon="bx:search" width="30px"></iconify-icon>
+                    </button>
                 </div>
-            </header>
+            </div>
+            <div class="hamburger_nav">
+                <label for="switch"><iconify-icon icon="charm:menu-hamburger" width="30" height="30"></iconify-icon></label>
+                <input type="checkbox" id="switch">
+                <ul class="ul_menu">
+                    <li>筆刷分類<iconify-icon class="" icon="material-symbols:keyboard-arrow-up" width="23" style="transform: translateY(5px);"></iconify-icon>
+                        <ul class="mainnav_cate">
+                            <li><a href="a1_water.html">水彩、水墨</a></li>
+                            <li><a href="a2_crayon.html">粉筆、蠟筆</a></li>
+                            <li><a href="a3_pencil.html">鉛筆、麥克筆</a></li>
+                            <li><a href="a4_special.html">特殊、其他筆刷</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="b_freebrush.html">免費筆刷</a></li>
+                    <li><a href="c_paybrush.html">付費筆刷</a></li>
+                    <li><a href="d_paper.html">特殊紙質</a></li>
+                    <li><a href="e1_brush.html">筆刷應用教學</a></li>
+                </ul>
+            </div> 
+            <script>
+                let firstLi = document.querySelector('.ul_menu > li')
+                let displaynav = document.querySelector('.ul_menu > li > ul');
+                let icon = document.querySelector('.ul_menu > li > iconify-icon');
+                function navToggle(){
+                    displaynav.classList.toggle('displaynav');
+                    if(icon.classList.contains("icon_open") == true){
+                        icon.classList.add("icon_close");
+                        icon.classList.remove("icon_open");
+                    }else{
+                        icon.classList.add("icon_open");
+                        icon.classList.remove("icon_close");
+                    }
+                }
+                firstLi.addEventListener('click',navToggle)
+                
+            </script>
+            <!--LOGO-->
+            <div class="top_LOGO">
+                <a href="index.html">
+                    <img src="image/LOGO_trans.png">
+                </a>        
+            </div>
 
-            <div class="i_banner">
-                <div>
-                    <div>
-                        <p>
-                            就。很。Pro<br>
-                            是一個專為Procreate<br>
-                            使用者設計的網站<br>
-                            這裡提供各式各樣的筆刷任君挑選<br>
-                        </p>            
-                    </div>
+        </div>
+        
+    </header>
+
+    <div class="div_1024">
+        <div class="banner_and_nav">
+            <div class="banner-box">
+                <div class="banner-box_word">
+                    <p>就。很。Ｐｒｏ</p>
+                    <p>是一個專為Ｐｒｏｃｒｅａｔｅ</p>
+                    <p>使用者設計的網站</p>
+                    <p>這裡提供各式各樣的筆刷任君挑選</p>
+                </div>
+                <div class="banner-box_pic">
                     <img src="image/i_banner_00.png">
                 </div>
             </div>
 
-            <nav class="nav_main">
+            <nav class="mainnav">
                 <ul>
-                    <li class="nav_main_cate" style="cursor:pointer;">筆刷分類<i class="fa-solid fa-caret-down"></i>
-                        <ul>
+                    <li>筆刷分類▼
+                        <ul class="mainnav_cate">
                             <li><a href="a1_water.html">水彩、水墨</a></li>
                             <li><a href="a2_crayon.html">粉筆、蠟筆</a></li>
                             <li><a href="a3_pencil.html">鉛筆、麥克筆</a></li>
                             <li><a href="a4_special.html">特殊、其他</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">免費筆刷</a></li>
-                    <li><a href="#">付費筆刷</a></li>
-                    <li><a href="#">特殊紙質</a></li>
-                    <li><a href="#">筆刷應用教學</a></li>
+                    <li><a href="b_freebrush.html">免費筆刷</a></li>
+                    <li><a href="c_paybrush.html">付費筆刷</a></li>
+                    <li><a href="d_paper.html">特殊紙質</a></li>
+                    <li><a href="e1_brush.html">筆刷應用教學</a></li>
                 </ul>
-            </nav>
+            </nav>    
+        </div>
+    </div>
 
-            <content>
-                    <div class="i_product_left">
-                        <div class="i_banner">
-                            <img src="image/i_banner_01.png">
-                        </div>
+    <content>
+        <div class="product_box green">
+            <div class="product_bannerpic">
+                <img src="image/i_banner_01.png">
+            </div>
+            <div class="product_infobox">
+                <h3>水彩、水墨</h3>
+                <img src="image/i_product01_00.png">
+                <p>
+                    使你的創作<br>
+                    溫馨又帶有童趣<br>
+                    隨興發揮、不受侷限<br>
+                    來揮灑顏料吧！
+                </p>
+            </div>
+            <div class="product_border"></div>
+            <div class="product_bgline" style="top:113.5px;margin-right: 500px;right: 0;"></div>
+            <div class="product_bgline" style="bottom:77px;margin-left: 500px;"></div>
+            <div class="product_card_container">
+                <div class="product_card_row"><script>
+                    var card_single = "";
+                    var card_col = "";
+                    for (i=1; i<=4; i++){
+                        card_single =
+                        `<div class="product_card_col">
+                            <div class="product_card">
+                                <!--<div class="product_card_label">
+                                    <iconify-icon inline icon="ph:heart-bold" width="20"></iconify-icon>
+                                    <iconify-icon inline icon="material-symbols:shopping-cart-outline-rounded" width="20"></iconify-icon>
+                                    <iconify-icon inline icon="material-symbols:shopping-cart-rounded" width="20"></iconify-icon>
+                                </div>-->
+                                <img src="image/b_freebrush_0${i}.png">
+                                <div class="product_card_bottom">
+                                    <p>筆刷名稱<br>By作者名</p>
+                                    <div class="product_card_bottom_button"><p>免費</p></div>
+                                </div>
+                            </div>
+                        </div>`;
 
-                        <div class="i_product_info">
-                            <h3 class="text-center">水彩、水墨</h3>
-                            <img src="image/i_product01_00.png">
-                            <p class="text-center">使你的創作<br>溫馨又帶有童趣<br>隨興發揮、不受侷限<br>來揮灑顏料吧！</p>
-                        </div>
-                        
-                        <div class="i_product_bottom" style="background-color: #749768;"></div>
-                        
-                        <div class="row i_product_row">
-                            <div class="col-3">
-                                <a href="#"><div class="card i_product_demo">
-                                    <!--icon 愛心及購物車
-                                    <i class="fa-regular fa-heart"></i>
-                                    <i class="fa-solid fa-cart-arrow-down"></i>
-                                    <i class="fa-solid fa-cart-shopping"></i>-->
-    
-                                    <img class="card-img-top i_card_top" src="image/i_product01_01.jpg" alt="Card image cap">
-                                    <div class="card-body i_card_body" style="background-color:#9AC08D;">
-                                        <p style="float:left;" class="card-text">筆刷名稱<br>By作者名</p>
-                                        <p style="float:right;font-size: 1.1rem;">免費</p>
-                                    </div>
-                                </div></a>
-                            </div>
-                            <div class="col-3">
-                                <a href="#"><div class="card i_product_demo">
-                                    <!--icon 愛心及購物車
-                                    <i class="fa-regular fa-heart"></i>
-                                    <i class="fa-solid fa-cart-arrow-down"></i>
-                                    <i class="fa-solid fa-cart-shopping"></i>-->
-    
-                                    <img class="card-img-top i_card_top" src="image/i_product01_02.jpg" alt="Card image cap">
-                                    <div class="card-body i_card_body" style="background-color:#9AC08D;">
-                                        <p style="float:left;" class="card-text">筆刷名稱<br>By作者名</p>
-                                        <p style="float:right;font-size: 1.1rem;">免費</p>
-                                    </div>
-                                </div></a>    
-                            </div>
-                            <div class="col-3">
-                                <a href="#"><div class="card i_product_demo">
-                                    <!--icon 愛心及購物車
-                                    <i class="fa-regular fa-heart"></i>
-                                    <i class="fa-solid fa-cart-arrow-down"></i>
-                                    <i class="fa-solid fa-cart-shopping"></i>-->
-    
-                                    <img class="card-img-top i_card_top" src="image/i_product01_03.jpg" alt="Card image cap">
-                                    <div class="card-body i_card_body" style="background-color:#9AC08D;">
-                                        <p style="float:left;" class="card-text">筆刷名稱<br>By作者名</p>
-                                        <p style="float:right;font-size: 1.1rem;">免費</p>
-                                    </div>
-                                </div></a>    
-                            </div>
-                            <div class="col-3">
-                                <a href="#"><div class="card i_product_demo">
-                                    <!--icon 愛心及購物車
-                                    <i class="fa-regular fa-heart"></i>
-                                    <i class="fa-solid fa-cart-arrow-down"></i>
-                                    <i class="fa-solid fa-cart-shopping"></i>-->
-    
-                                    <img class="card-img-top i_card_top" src="image/i_product01_04.jpg" alt="Card image cap">
-                                    <div class="card-body i_card_body" style="background-color:#9AC08D;">
-                                        <p style="float:left;" class="card-text">筆刷名稱<br>By作者名</p>
-                                        <p style="float:right;font-size: 1.1rem;">免費</p>
-                                    </div>
-                                </div></a>    
-                            </div>
-                        </div>
+                        card_col += card_single;
+                    }
+                    document.write(card_col);
+                </script></div>    
+            </div>
+            <div class="product_link"><a href="a1_water.html">查看更多水彩、水墨筆刷>>></a></div>
+        </div>
 
-                            <a href="a1_water.html" class="i_product_more">查看更多水彩、水墨筆刷>>></a>   
+        <div class="product_box purple right">
+            <div class="product_bannerpic">
+                <img src="image/i_banner_02.png">
+            </div>
+            <div class="product_infobox">
+                <h3>粉筆、蠟筆</h3>
+                <img src="image/i_product02_00.png">
+                <p>
+                    <br>厚塗推薦<br>
+                    讓你的作品更有層次感<br>
+                    一起來塗塗抹抹！
+                </p>
+            </div>
+            <div class="product_border"></div>
+            <div class="product_bgline" style="bottom:77px;margin-right: 500px;right: 0;"></div>
+            <div class="product_bgline" style="top:113.5px;margin-left: 500px;"></div>
+            <div class="product_card_container">
+                <div class="product_card_row"><script>
+                    var card_single = "";
+                    var card_col = "";
+                    for (i=5; i<=8; i++){
+                        card_single =
+                        `<div class="product_card_col">
+                            <div class="product_card">
+                                <!--<div class="product_card_label">
+                                    <iconify-icon inline icon="ph:heart-bold" width="20"></iconify-icon>
+                                    <iconify-icon inline icon="material-symbols:shopping-cart-outline-rounded" width="20"></iconify-icon>
+                                    <iconify-icon inline icon="material-symbols:shopping-cart-rounded" width="20"></iconify-icon>
+                                </div>-->
+                                <img src="image/b_freebrush_0${i}.png">
+                                <div class="product_card_bottom">
+                                    <p>筆刷名稱<br>By作者名</p>
+                                    <div class="product_card_bottom_button"><p>免費</p></div>
+                                </div>
+                            </div>
+                        </div>`;
 
-                        </div>    
-                    </div>
-                    <div class="i_product_right word_white">
-                        <div class="i_banner">
-                            <img src="image/i_banner_02.jpg">
-                        </div>
+                        card_col += card_single;
+                    }
+                    document.write(card_col);
+                </script></div>    
+            </div>
+            <div class="product_link"><a href="a2_crayon.html">查看更多粉筆、蠟筆筆刷>>></a></div>
+        </div>
 
-                        <div class="i_product_info">
-                            <h3 class="text-center">粉筆、蠟筆</h3>
-                            <img src="image/i_product02_00.png" height="35px">
-                            <p class="text-center">厚塗推薦<br>讓你的作品更有層次感<br>一起來塗塗抹抹！</p>
-                        </div>
-                        
-                        <div class="i_product_bottom" style="background-color: #522376;"></div>
-                        
-                        <div class="row i_product_row">
-                            <div class="col-3">
-                                <a href="#"><div class="card i_product_demo">
-                                    <!--icon 愛心及購物車
-                                    <i class="fa-regular fa-heart"></i>
-                                    <i class="fa-solid fa-cart-arrow-down"></i>
-                                    <i class="fa-solid fa-cart-shopping"></i>-->
-    
-                                    <img class="card-img-top i_card_top" src="image/i_product02_01.png" alt="Card image cap">
-                                    <div class="card-body i_card_body" style="background-color:#785494;">
-                                        <p style="float:left;" class="card-text">筆刷名稱<br>By作者名</p>
-                                        <p style="float:right;font-size: 1.1rem;">免費</p>
-                                    </div>
-                                </div></a>
+        <div class="product_box gray">
+            <div class="product_bannerpic">
+                <img src="image/i_banner_03.png">
+            </div>
+            <div class="product_infobox">
+                <h3>鉛筆、麥克筆</h3>
+                <img src="image/i_product03_00.png">
+                <p>
+                    描繪素描風格<br>
+                    手繪筆觸、飽含溫度<br>
+                    多種仿真筆刷<br>
+                    等你來挑選
+                </p>
+            </div>
+            <div class="product_border"></div>
+            <div class="product_bgline" style="top:113.5px;margin-right: 500px;right: 0;"></div>
+            <div class="product_bgline" style="bottom:77px;margin-left: 500px;"></div>
+            <div class="product_card_container">
+                <div class="product_card_row"><script>
+                    var card_single = "";
+                    var card_col = "";
+                    for (i=1; i<=4; i++){
+                        card_single =
+                        `<div class="product_card_col">
+                            <div class="product_card">
+                                <!--<div class="product_card_label">
+                                    <iconify-icon inline icon="ph:heart-bold" width="20"></iconify-icon>
+                                    <iconify-icon inline icon="material-symbols:shopping-cart-outline-rounded" width="20"></iconify-icon>
+                                    <iconify-icon inline icon="material-symbols:shopping-cart-rounded" width="20"></iconify-icon>
+                                </div>-->
+                                <img src="image/c_paybrush_0${i}.png">
+                                <div class="product_card_bottom">
+                                    <p>筆刷名稱<br>By作者名</p>
+                                    <div class="product_card_bottom_button"><p>免費</p></div>
+                                </div>
                             </div>
-                            <div class="col-3">
-                                <a href="#"><div class="card i_product_demo">
-                                    <!--icon 愛心及購物車
-                                    <i class="fa-regular fa-heart"></i>
-                                    <i class="fa-solid fa-cart-arrow-down"></i>
-                                    <i class="fa-solid fa-cart-shopping"></i>-->
-    
-                                    <img class="card-img-top i_card_top" src="image/i_product02_02.png" alt="Card image cap">
-                                    <div class="card-body i_card_body" style="background-color:#785494;">
-                                        <p style="float:left;" class="card-text">筆刷名稱<br>By作者名</p>
-                                        <p style="float:right;font-size: 1.1rem;">免費</p>
-                                    </div>
-                                </div></a>    
-                            </div>
-                            <div class="col-3">
-                                <a href="#"><div class="card i_product_demo">
-                                    <!--icon 愛心及購物車
-                                    <i class="fa-regular fa-heart"></i>
-                                    <i class="fa-solid fa-cart-arrow-down"></i>
-                                    <i class="fa-solid fa-cart-shopping"></i>-->
-    
-                                    <img class="card-img-top i_card_top" src="image/i_product02_03.png" alt="Card image cap">
-                                    <div class="card-body i_card_body" style="background-color:#785494;">
-                                        <p style="float:left;" class="card-text">筆刷名稱<br>By作者名</p>
-                                        <p style="float:right;font-size: 1.1rem;">免費</p>
-                                    </div>
-                                </div></a>    
-                            </div>
-                            <div class="col-3">
-                                <a href="#"><div class="card i_product_demo">
-                                    <!--icon 愛心及購物車
-                                    <i class="fa-regular fa-heart"></i>
-                                    <i class="fa-solid fa-cart-arrow-down"></i>
-                                    <i class="fa-solid fa-cart-shopping"></i>-->
-    
-                                    <img class="card-img-top i_card_top" src="image/i_product02_04.png" alt="Card image cap">
-                                    <div class="card-body i_card_body" style="background-color:#785494;">
-                                        <p style="float:left;" class="card-text">筆刷名稱<br>By作者名</p>
-                                        <p style="float:right;font-size: 1.1rem;">免費</p>
-                                    </div>
-                                </div></a>    
-                            </div>
-                        </div>
+                        </div>`;
 
-                            <a href="a2_crayon.html" class="i_product_more">查看更多粉筆、蠟筆筆刷>>></a>   
+                        card_col += card_single;
+                    }
+                    document.write(card_col);
+                </script></div>    
+            </div>
+            <div class="product_link"><a href="a3_pencil.html">查看更多鉛筆、麥克筆筆刷>>></a></div>
+        </div>
 
-                        </div>    
-                    </div><div class="i_product_left">
-                        <div class="i_banner">
-                            <img src="image/i_banner_03.jpg">
-                        </div>
 
-                        <div class="i_product_info">
-                            <h3 class="text-center">鉛筆、麥克筆</h3>
-                            <img src="image/i_product03_00.png">
-                            <p class="text-center">描繪素描風格<br>手繪筆觸、飽含溫度<br>多種仿真筆刷<br>等你來挑選</p>
-                        </div>
-                        
-                        <div class="i_product_bottom" style="background-color:#929292 ;"></div>
-                        
-                        <div class="row i_product_row">
-                            <div class="col-3">
-                                <a href="#"><div class="card i_product_demo">
-                                    <!--icon 愛心及購物車
-                                    <i class="fa-regular fa-heart"></i>
-                                    <i class="fa-solid fa-cart-arrow-down"></i>
-                                    <i class="fa-solid fa-cart-shopping"></i>-->
-    
-                                    <img class="card-img-top i_card_top" src="image/i_product03_01.png" alt="Card image cap">
-                                    <div class="card-body i_card_body" style="background-color:#CACACA;">
-                                        <p style="float:left;" class="card-text">筆刷名稱<br>By作者名</p>
-                                        <p style="float:right;font-size: 1.1rem;">免費</p>
-                                    </div>
-                                </div></a>
+        <div class="product_box yellow right">
+            <div class="product_bannerpic">
+                <img src="image/i_banner_04.png">
+            </div>
+            <div class="product_infobox">
+                <h3>特殊及其他筆刷</h3>
+                <img src="image/i_product04_00.png">
+                <p>
+                    各種圖形的筆刷<br>
+                    讓你在創作時更加輕鬆<br>
+                    一瞬間<br>
+                    就能呈現你要的效果！
+                </p>
+            </div>
+            <div class="product_border"></div>
+            <div class="product_bgline" style="bottom:77px;margin-right: 500px;right: 0;"></div>
+            <div class="product_bgline" style="top:113.5px;margin-left: 500px;"></div>
+            <div class="product_card_container">
+                <div class="product_card_row"><script>
+                    var card_single = "";
+                    var card_col = "";
+                    for (i=5; i<=8; i++){
+                        card_single =
+                        `<div class="product_card_col">
+                            <div class="product_card">
+                                <!--<div class="product_card_label">
+                                    <iconify-icon inline icon="ph:heart-bold" width="20"></iconify-icon>
+                                    <iconify-icon inline icon="material-symbols:shopping-cart-outline-rounded" width="20"></iconify-icon>
+                                    <iconify-icon inline icon="material-symbols:shopping-cart-rounded" width="20"></iconify-icon>
+                                </div>-->
+                                <img src="image/c_paybrush_0${i}.png">
+                                <div class="product_card_bottom">
+                                    <p>筆刷名稱<br>By作者名</p>
+                                    <div class="product_card_bottom_button"><p>免費</p></div>
+                                </div>
                             </div>
-                            <div class="col-3">
-                                <a href="#"><div class="card i_product_demo">
-                                    <!--icon 愛心及購物車
-                                    <i class="fa-regular fa-heart"></i>
-                                    <i class="fa-solid fa-cart-arrow-down"></i>
-                                    <i class="fa-solid fa-cart-shopping"></i>-->
-    
-                                    <img class="card-img-top i_card_top" src="image/i_product03_02.png" alt="Card image cap">
-                                    <div class="card-body i_card_body" style="background-color:#CACACA;">
-                                        <p style="float:left;" class="card-text">筆刷名稱<br>By作者名</p>
-                                        <p style="float:right;font-size: 1.1rem;">免費</p>
-                                    </div>
-                                </div></a>    
-                            </div>
-                            <div class="col-3">
-                                <a href="#"><div class="card i_product_demo">
-                                    <!--icon 愛心及購物車
-                                    <i class="fa-regular fa-heart"></i>
-                                    <i class="fa-solid fa-cart-arrow-down"></i>
-                                    <i class="fa-solid fa-cart-shopping"></i>-->
-    
-                                    <img class="card-img-top i_card_top" src="image/i_product03_03.png" alt="Card image cap">
-                                    <div class="card-body i_card_body" style="background-color:#CACACA;">
-                                        <p style="float:left;" class="card-text">筆刷名稱<br>By作者名</p>
-                                        <p style="float:right;font-size: 1.1rem;">免費</p>
-                                    </div>
-                                </div></a>    
-                            </div>
-                            <div class="col-3">
-                                <a href="#"><div class="card i_product_demo">
-                                    <!--icon 愛心及購物車
-                                    <i class="fa-regular fa-heart"></i>
-                                    <i class="fa-solid fa-cart-arrow-down"></i>
-                                    <i class="fa-solid fa-cart-shopping"></i>-->
-    
-                                    <img class="card-img-top i_card_top" src="image/i_product03_04.png" alt="Card image cap">
-                                    <div class="card-body i_card_body" style="background-color:#CACACA;">
-                                        <p style="float:left;" class="card-text">筆刷名稱<br>By作者名</p>
-                                        <p style="float:right;font-size: 1.1rem;">免費</p>
-                                    </div>
-                                </div></a>    
-                            </div>
-                        </div>
+                        </div>`;
 
-                            <a href="a3_pencil.html" class="i_product_more">查看更多鉛筆、麥克筆筆刷>>></a>   
+                        card_col += card_single;
+                    }
+                    document.write(card_col);
+                </script></div>    
+            </div>
+            <div class="product_link"><a href="a4_special.html">查看更多特殊及其他筆刷>>></a></div>
+        </div>
 
-                        </div>    
-                    </div><div class="i_product_right">
-                        <div class="i_banner">
-                            <img src="image/i_banner_04.png">
-                        </div>
+        <!--特殊紙質-->
+        <div class="paper_box">
+            <h3>特殊紙質</h3>
+            <div class="hr"></div>
+            <div class="paper_card_container">
+                <div class="paper_card_row"><script>
+                    var card_single = "";
+                    var card_col = "";
+                    for (i=1; i<=4; i++){
+                        card_single =
+                        `<div class="paper_card_col">
+                            <div class="paper_card">
+                                <!--<div class="paper_card_label">
+                                    <iconify-icon inline icon="ph:heart-bold" width="20"></iconify-icon>
+                                    <iconify-icon inline icon="material-symbols:shopping-cart-outline-rounded" width="20"></iconify-icon>
+                                    <iconify-icon inline icon="material-symbols:shopping-cart-rounded" width="20"></iconify-icon>
+                                </div>-->
+                                <img src="image/d_paper_0${i}.png">
+                                <div class="paper_card_bottom">
+                                    <p>紙質名稱<br>By作者名</p>
+                                    <div class="paper_card_bottom_button"><p>免費</p></div>
+                                </div>
+                            </div>
+                        </div>`;
 
-                        <div class="i_product_info">
-                            <h3 class="text-center">特殊及其他筆刷</h3>
-                            <img src="image/i_product04_00.png">
-                            <p class="text-center">各種圖形的筆刷<br>讓你在創作時更加輕鬆<br>一瞬間<br>就能呈現你要的效果！</p>
-                        </div>
-                        
-                        <div class="i_product_bottom" style="background-color: #D7CD7A;"></div>
-                        
-                        <div class="row i_product_row">
-                            <div class="col-3">
-                                <a href="#"><div class="card i_product_demo">
-                                    <!--icon 愛心及購物車
-                                    <i class="fa-regular fa-heart"></i>
-                                    <i class="fa-solid fa-cart-arrow-down"></i>
-                                    <i class="fa-solid fa-cart-shopping"></i>-->
+                        card_col += card_single;
+                    }
+                    document.write(card_col);
+                </script></div>
+            </div>    
+            <div class="paper_link"><a href="d_paper.html">查看更多特殊紙質>>></a></div>
+        </div>
+    </content>
+        
+    <!--問題回報-->
+    <content>
+        <div class="contact_box">
+            <div class="contact_box_inside">
+                <h3>聯絡我們</h3>
+                <img src="image/LOGO-trans_cut.png" width="286px">
+                <p>
+                    遇到問題了嗎？<br>
+                    對網站有什麼建議嗎？<br>
+                    想要在就。很。Pro上架自己的作品嗎？<br>
+                    歡迎來信讓我們知道！<br>
+                    Johenpro_brush@gmail.com
+                </p>
+            </div>
+        </div>
+    </content>
     
-                                    <img class="card-img-top i_card_top" src="image/i_product04_01.png" alt="Card image cap">
-                                    <div class="card-body i_card_body" style="background-color:#EEE59B;">
-                                        <p style="float:left;" class="card-text">筆刷名稱<br>By作者名</p>
-                                        <p style="float:right;font-size: 1.1rem;">免費</p>
-                                    </div>
-                                </div></a>
-                            </div>
-                            <div class="col-3">
-                                <a href="#"><div class="card i_product_demo">
-                                    <!--icon 愛心及購物車
-                                    <i class="fa-regular fa-heart"></i>
-                                    <i class="fa-solid fa-cart-arrow-down"></i>
-                                    <i class="fa-solid fa-cart-shopping"></i>-->
-    
-                                    <img class="card-img-top i_card_top" src="image/i_product04_02.png" alt="Card image cap">
-                                    <div class="card-body i_card_body" style="background-color:#EEE59B;">
-                                        <p style="float:left;" class="card-text">筆刷名稱<br>By作者名</p>
-                                        <p style="float:right;font-size: 1.1rem;">免費</p>
-                                    </div>
-                                </div></a>    
-                            </div>
-                            <div class="col-3">
-                                <a href="#"><div class="card i_product_demo">
-                                    <!--icon 愛心及購物車
-                                    <i class="fa-regular fa-heart"></i>
-                                    <i class="fa-solid fa-cart-arrow-down"></i>
-                                    <i class="fa-solid fa-cart-shopping"></i>-->
-    
-                                    <img class="card-img-top i_card_top" src="image/i_product04_03.png" alt="Card image cap">
-                                    <div class="card-body i_card_body" style="background-color:#EEE59B;">
-                                        <p style="float:left;" class="card-text">筆刷名稱<br>By作者名</p>
-                                        <p style="float:right;font-size: 1.1rem;">免費</p>
-                                    </div>
-                                </div></a>    
-                            </div>
-                            <div class="col-3">
-                                <a href="#"><div class="card i_product_demo">
-                                    <!--icon 愛心及購物車
-                                    <i class="fa-regular fa-heart"></i>
-                                    <i class="fa-solid fa-cart-arrow-down"></i>
-                                    <i class="fa-solid fa-cart-shopping"></i>-->
-    
-                                    <img class="card-img-top i_card_top" src="image/i_product04_04.png" alt="Card image cap">
-                                    <div class="card-body i_card_body" style="background-color:#EEE59B;">
-                                        <p style="float:left;" class="card-text">筆刷名稱<br>By作者名</p>
-                                        <p style="float:right;font-size: 1.1rem;">免費</p>
-                                    </div>
-                                </div></a>    
-                            </div>
-                        </div>
+    <footer>
+        <nav class="nav_bottom">
+            <ul>
+                <li><a href="b_freebrush.html">免費筆刷</a></li>
+                <li><a href="c_paybrush.html">付費筆刷</a></li>
+                <li><a href="d_paper.html">特殊紙質</a></li>
+                <li><a href="e1_brush.html">筆刷應用教學</a></li>
+            </ul>
+        </nav>
 
-                            <a href="a4_special.html" class="i_product_more">查看更多特殊及其他筆刷>>></a>   
+        <div class="nav_hr"></div>
 
-                        </div>    
-                    </div>
+        <div class="LOGO">
+            <a href="index.html">
+                <img src="image/LOGO_trans.png" width="256px">
+            </a>
+        </div>
 
-                    <div class="i_paper">
-                        <h3>特殊紙質</h3>
-                        <hr>
-                        <div class="row i_paper_row">
-                            <div class="col-3">
-                                <a href="#"><div class="card i_paper_demo">
-                                    <!--icon 愛心及購物車
-                                    <i class="fa-regular fa-heart"></i>
-                                    <i class="fa-solid fa-cart-arrow-down"></i>
-                                    <i class="fa-solid fa-cart-shopping"></i>-->
-    
-                                    <img class="card-img-top i_card_top" src="image/i_product05_01.PNG" alt="Card image cap">
-                                    <div class="card-body i_card_body">
-                                        <p style="float:left;" class="card-text">紙質名稱<br>By作者名</p>
-                                        <p style="float:right;font-size: 1.1rem;">免費</p>
-                                    </div>
-                                </div></a>
-                            </div>
-                            <div class="col-3">
-                                <a href="#"><div class="card i_paper_demo">
-                                    <!--icon 愛心及購物車
-                                    <i class="fa-regular fa-heart"></i>
-                                    <i class="fa-solid fa-cart-arrow-down"></i>
-                                    <i class="fa-solid fa-cart-shopping"></i>-->
-    
-                                    <img class="card-img-top i_card_top" src="image/i_product05_02.JPG" alt="Card image cap">
-                                    <div class="card-body i_card_body">
-                                        <p style="float:left;" class="card-text">紙質名稱<br>By作者名</p>
-                                        <p style="float:right;font-size: 1.1rem;">免費</p>
-                                    </div>
-                                </div></a>    
-                            </div>
-                            <div class="col-3">
-                                <a href="#"><div class="card i_paper_demo">
-                                    <!--icon 愛心及購物車
-                                    <i class="fa-regular fa-heart"></i>
-                                    <i class="fa-solid fa-cart-arrow-down"></i>
-                                    <i class="fa-solid fa-cart-shopping"></i>-->
-    
-                                    <img class="card-img-top i_card_top" src="image/i_product05_03.PNG" alt="Card image cap">
-                                    <div class="card-body i_card_body">
-                                        <p style="float:left;" class="card-text">紙質名稱<br>By作者名</p>
-                                        <p style="float:right;font-size: 1.1rem;">免費</p>
-                                    </div>
-                                </div></a>    
-                            </div>
-                            <div class="col-3">
-                                <a href="#"><div class="card i_paper_demo">
-                                    <!--icon 愛心及購物車
-                                    <i class="fa-regular fa-heart"></i>
-                                    <i class="fa-solid fa-cart-arrow-down"></i>
-                                    <i class="fa-solid fa-cart-shopping"></i>-->
-    
-                                    <img class="card-img-top i_card_top" src="image/i_product05_04.PNG" alt="Card image cap">
-                                    <div class="card-body i_card_body">
-                                        <p style="float:left;" class="card-text">紙質名稱<br>By作者名</p>
-                                        <p style="float:right;font-size: 1.1rem;">免費</p>
-                                    </div>
-                                </div></a>    
-                            </div>
-                        </div>
-
-                        <div class="i_paper_more"><a href="#">查看更多特殊紙質>>></a></div>
-                    </div>
-            </content>
-            
-
-            <content>
-                <div class="i_contact">
-                    <div class="i_contact_box">
-                        <h3>聯絡我們</h3>
-                        <img src="image/LOGO-trans_cut.png">
-                        <p>
-                            碰到什麼問題嗎？<br>
-                            對網站有什麼建議嗎？<br>
-                            想要在就。很。Pro上架自己的作品嗎？<br>
-                            歡迎來信讓我們知道！<br>
-                            Johenpro_brush@gmail.com
-                        </p>
-                    </div>
-                </div>
-            </content>
-            
-            
-            <footer>
-                <nav class="nav_bottom">
-                    <ul>
-                        <li><a href="#">免費筆刷</a></li>
-                        <li><a href="#">付費筆刷</a></li>
-                        <li><a href="#">特殊紙質</a></li>
-                        <li><a href="#">筆刷應用教學</a></li>
-                    </ul>
-                </nav>
-
-                <hr>
-                <div class="LOGO">
-                    <a href="index.html">
-                        <img src="image/LOGO_trans.png" width="300px">
-                    </a>        
-                </div>
-            </footer>
-            <!--返回頂部的button-->
-            <button type="button" id="BackTop" class="toTop-arrow"></button>
-            <script> 
-                $(function(){
-                    $('#BackTop').click(function(){ 
-                        $('html,body').animate({scrollTop:0}, 0);
-                    });
-                    $(window).scroll(function() {
-                        if ( $(this).scrollTop() > 300 ){
-                            $('#BackTop').fadeIn(222);
-                        } else {
-                            $('#BackTop').stop().fadeOut(222);
-                        }
-                    }).scroll();
-                });
-            </script>
-    </body>
+    </footer>
+    <!--返回頂部的button-->
+    <button type="button" id="BackTop" class="toTop-arrow"></button>
+    <script> 
+        $(function(){
+            $('#BackTop').click(function(){ 
+                $('html,body').animate({scrollTop:0}, 0);
+            });
+            $(window).scroll(function() {
+                if ( $(this).scrollTop() > 300 ){
+                    $('#BackTop').fadeIn(222);
+                } else {
+                    $('#BackTop').stop().fadeOut(222);
+                }
+            }).scroll();
+        });
+    </script>
+</body>
 </html>
