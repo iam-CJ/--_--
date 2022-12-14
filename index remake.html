@@ -309,30 +309,32 @@
         <div class="paper_box">
             <h3>特殊紙質</h3>
             <div class="hr"></div>
-            <div class="paper_card_row"><script>
-                var card_single = "";
-                var card_col = "";
-                for (i=1; i<=4; i++){
-                    card_single =
-                    `<div class="paper_card_col">
-                        <div class="paper_card">
-                            <!--<div class="paper_card_label">
-                                <iconify-icon inline icon="ph:heart-bold" width="20"></iconify-icon>
-                                <iconify-icon inline icon="material-symbols:shopping-cart-outline-rounded" width="20"></iconify-icon>
-                                <iconify-icon inline icon="material-symbols:shopping-cart-rounded" width="20"></iconify-icon>
-                            </div>-->
-                            <img src="image/d_paper_0${i}.png">
-                            <div class="paper_card_bottom">
-                                <p>紙質名稱<br>By作者名</p>
-                                <div class="paper_card_bottom_button"><p>免費</p></div>
+            <div class="paper_card_container">
+                <div class="paper_card_row"><script>
+                    var card_single = "";
+                    var card_col = "";
+                    for (i=1; i<=4; i++){
+                        card_single =
+                        `<div class="paper_card_col">
+                            <div class="paper_card">
+                                <!--<div class="paper_card_label">
+                                    <iconify-icon inline icon="ph:heart-bold" width="20"></iconify-icon>
+                                    <iconify-icon inline icon="material-symbols:shopping-cart-outline-rounded" width="20"></iconify-icon>
+                                    <iconify-icon inline icon="material-symbols:shopping-cart-rounded" width="20"></iconify-icon>
+                                </div>-->
+                                <img src="image/d_paper_0${i}.png">
+                                <div class="paper_card_bottom">
+                                    <p>紙質名稱<br>By作者名</p>
+                                    <div class="paper_card_bottom_button"><p>免費</p></div>
+                                </div>
                             </div>
-                        </div>
-                    </div>`;
+                        </div>`;
 
-                    card_col += card_single;
-                }
-                document.write(card_col);
-            </script></div>    
+                        card_col += card_single;
+                    }
+                    document.write(card_col);
+                </script></div>
+            </div>    
             <div class="paper_link"><a href="d_paper.html">查看更多特殊紙質>>></a></div>
         </div>
     </content>
@@ -371,8 +373,6 @@
                 <img src="image/LOGO_trans.png" width="256px">
             </a>
         </div>
-
-        <p>建議使用螢幕解析度1440x1080觀看</p>
 
     </footer>
     <!--返回頂部的button-->
