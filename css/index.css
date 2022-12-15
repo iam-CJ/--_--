@@ -618,6 +618,13 @@ ul {
     width: 160%;
   }
 }
+@media screen and (max-width: 490px) {
+  .product_box .product_infobox_align {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
 .product_box .product_infobox {
   width: 250px;
   height: 223px;
@@ -633,6 +640,12 @@ ul {
     max-width: 250px;
     right: 50px;
     top: 10%;
+  }
+}
+@media screen and (max-width: 490px) {
+  .product_box .product_infobox {
+    right: unset;
+    left: unset;
   }
 }
 .product_box .product_infobox h3 {
