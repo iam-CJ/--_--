@@ -378,7 +378,8 @@ ul {
 }
 .banner_and_nav .mainnav {
   position: absolute;
-  bottom: 0;
+  line-height: 32px;
+  bottom: -5px;
   right: 0;
   z-index: 99;
 }
@@ -397,6 +398,28 @@ ul {
 }
 .banner_and_nav .mainnav ul li:hover {
   color: #808080;
+}
+.banner_and_nav .mainnav ul li:hover iconify-icon {
+  -webkit-animation: hoveropen 0.5s;
+          animation: hoveropen 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+@-webkit-keyframes hoveropen {
+  0% {
+    transform: translateY(5px) rotate(0deg);
+  }
+  100% {
+    transform: translateY(5px) rotate(180deg);
+  }
+}
+@keyframes hoveropen {
+  0% {
+    transform: translateY(5px) rotate(0deg);
+  }
+  100% {
+    transform: translateY(5px) rotate(180deg);
+  }
 }
 .banner_and_nav .mainnav .mainnav_cate {
   display: block;

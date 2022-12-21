@@ -346,7 +346,8 @@ ul {
 
 	.mainnav {
 		position: absolute;
-		bottom: 0;
+		line-height: 32px;
+		bottom: -5px;
 		right: 0;
 		z-index: 99;
 		@media screen and (max-width:768px) {
@@ -355,7 +356,6 @@ ul {
 		ul {
 			margin-bottom: 0;
 			padding-left: 0;
-
 			li {
 				margin-right: 25px;
 				cursor: pointer;
@@ -363,6 +363,14 @@ ul {
 
 			li:hover {
 				color: #808080;
+				iconify-icon{
+					animation:hoveropen 0.5s ;
+					animation-fill-mode: forwards;
+					@keyframes hoveropen {
+						0%{transform:translateY(5px) rotate(0deg);}
+						100%{transform:translateY(5px) rotate(180deg);}
+					}
+				}
 			}
 		}
 
