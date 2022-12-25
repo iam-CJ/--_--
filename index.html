@@ -26,26 +26,27 @@
 <body>
     <header>
         <div class="div_1024">
-            <div class="top_subnav">
-                <ul>
-                    <li><a href=""><iconify-icon inline icon="carbon:user-avatar-filled" width="20px"></iconify-icon>會員登入</a></li>
-                    <li><a href="g_like.html"><iconify-icon inline icon="ph:heart-fill" width="20px"></iconify-icon>我的收藏</a></li>
-                    <li><a href=""><iconify-icon inline icon="carbon:user-avatar-filled" width="30px"></iconify-icon></a></li>
-                    <li><a href="g_like.html"><iconify-icon inline icon="ph:heart-fill" width="30px"></iconify-icon></a></li>
-                </ul>
-    
-                <div class="input-group rounded">
-                    <input type="search" class="form-control rounded-pill" style="background-color: #C4C4C4;" placeholder="搜尋…" aria-label="Search" aria-describedby="search-addon" />
-                    <button type="button" class="btn btn-default" aria-label="Left Align">
-                        <iconify-icon icon="bx:search" width="30px"></iconify-icon>
-                    </button>
+            <div class="searchbar_and_subnav">
+                <div class="subnav">
+                    <ul>
+                        <li><a href="#"><iconify-icon inline icon="carbon:user-avatar-filled" width="20px"></iconify-icon><p>會員登入</p></a></li>
+                        <li><a href="g_like.html"><iconify-icon inline icon="ph:heart-fill" width="20px"></iconify-icon><p>我的收藏</p></a></li>
+                    </ul>
                 </div>
+                <div class="searchbar">
+                    <span class="input-group rounded form-inline">
+                        <input type="search" class="form-control rounded-pill" style="background-color: #C4C4C4;" placeholder="搜尋…" aria-label="Search" aria-describedby="search-addon" />
+                        <button type="button" class="btn btn-default" aria-label="Left Align">
+                            <iconify-icon icon="bx:search" width="30px"></iconify-icon>
+                        </button>
+                    </span>    
+                </div>    
             </div>
-            <div class="hamburger_nav">
+            <nav class="hamburger_nav">
                 <label for="switch"><iconify-icon icon="charm:menu-hamburger" width="30" height="30"></iconify-icon></label>
                 <input type="checkbox" id="switch">
-                <ul class="ul_menu">
-                    <li>筆刷分類<iconify-icon class="" icon="material-symbols:keyboard-arrow-up" width="23" style="transform: translateY(5px);"></iconify-icon>
+                <ul class="mainnav_ul">
+                    <li class="mainnav_ul_1stli" style="cursor:pointer;">筆刷分類<iconify-icon class="" icon="material-symbols:keyboard-arrow-up" width="23" style="transform: translateY(5px);"></iconify-icon>
                         <ul class="mainnav_cate">
                             <li><a href="a1_water.html">水彩、水墨</a></li>
                             <li><a href="a2_crayon.html">粉筆、蠟筆</a></li>
@@ -58,23 +59,25 @@
                     <li><a href="d_paper.html">特殊紙質</a></li>
                     <li><a href="e1_brush.html">筆刷應用教學</a></li>
                 </ul>
-            </div> 
+            </nav>
             <script>
-                let firstLi = document.querySelector('.ul_menu > li')
-                let displaynav = document.querySelector('.ul_menu > li > ul');
-                let icon = document.querySelector('.ul_menu > li > iconify-icon');
+                let firstLi = document.querySelector('.mainnav_ul > li')
+                let displaynav = document.querySelector('.mainnav_ul_1stli > ul');
+                let icon = document.querySelector('.mainnav_ul_1stli > iconify-icon');
                 function navToggle(){
-                    displaynav.classList.toggle('displaynav');
-                    if(icon.classList.contains("icon_open") == true){
-                        icon.classList.add("icon_close");
-                        icon.classList.remove("icon_open");
-                    }else{
-                        icon.classList.add("icon_open");
-                        icon.classList.remove("icon_close");
+                    if(window.innerWidth <= 768){
+                        console.log(firstLi)
+                        displaynav.classList.toggle('displaynav');
+                        if(icon.classList.contains("icon_open") == true){
+                            icon.classList.add("icon_close");
+                            icon.classList.remove("icon_open");
+                        }else{
+                            icon.classList.add("icon_open");
+                            icon.classList.remove("icon_close");
+                        }
                     }
                 }
-                firstLi.addEventListener('click',navToggle)
-                
+                firstLi.addEventListener('click',navToggle)                
             </script>
             <!--LOGO-->
             <div class="top_LOGO">
