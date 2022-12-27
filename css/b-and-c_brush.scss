@@ -451,20 +451,7 @@ footer{
 		min-width: unset;
 		width: 100%;
 	}
-	.bottomnav{
-		ul{
-			display: flex;
-			justify-content: center;
-			margin-bottom: 3px;
-			@media screen and (max-width:768px) {
-				display: none;
-			}			
-			li{
-				margin: auto 50px;
-			}
-		}
-	}
-	.bottomnav_hr{
+	.footer_hr{
 		width: 80%;
 		border: #000000 1px solid;
 		border-style: solid none none none;
@@ -475,7 +462,7 @@ footer{
 		}
 	
 	}
-	.bottomnav_logo{
+	.footer_logo{
 		display: flex;
 		justify-content: center;
 		img{
