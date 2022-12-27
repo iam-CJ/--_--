@@ -422,11 +422,61 @@ content h3 {
 content .border_box {
   border: black 1px solid;
   border-radius: 25px;
+  margin-top: 50px;
+}
+@media screen and (max-width: 768px) {
+  content .border_box {
+    min-width: -webkit-fit-content;
+    min-width: -moz-fit-content;
+    min-width: fit-content;
+  }
+}
+@media screen and (max-width: 455px) {
+  content .border_box {
+    min-width: 355px;
+  }
+}
+content .border_box .tabs {
+  position: relative;
+  display: flex;
+  bottom: 35px;
+  margin-bottom: 0;
+}
+@media screen and (max-width: 768px) {
+  content .border_box .tabs {
+    padding: 0;
+    justify-content: center;
+  }
+}
+content .border_box .tabs li {
+  margin: 0 5px;
+}
+content .border_box .tabs li a {
+  border: 1px solid #333;
+  border-bottom: 0px none;
+  border-radius: 15px 15px 0px 0px;
+  color: #fff;
+  display: block;
+  background-color: rgb(100, 100, 100);
+  padding: 5px 40px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+content .border_box .tabs li a.active {
+  color: black;
+  top: 1px;
+  background-color: #fff;
+}
+content .border_box .tab {
+  display: none;
+  padding-right: 50px;
 }
 content .border_box .border_box_text {
-  margin-top: 25px;
   margin-left: 50px;
   margin-bottom: 100px;
+}
+content .border_box .border_box_text #brush {
+  display: block;
 }
 content .border_box .border_box_text p {
   font-size: 1.3rem;
@@ -435,6 +485,11 @@ content .border_box .border_box_text ul {
   display: block;
   margin-left: 25px;
   margin-bottom: 50px;
+}
+@media screen and (max-width: 455px) {
+  content .border_box .border_box_text ul {
+    margin-left: 0;
+  }
 }
 content .border_box .border_box_text ul li {
   list-style: circle;
@@ -495,4 +550,4 @@ footer .bottomnav_logo {
 footer p {
   color: #d6d6d6;
   text-align: center;
-}/*# sourceMappingURL=c_how.css.map */
+}/*# sourceMappingURL=e_tutorial.css.map */
