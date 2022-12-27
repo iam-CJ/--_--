@@ -410,6 +410,11 @@ content {
     min-width: 370px;
   }
 }
+@media screen and (max-width: 455px) {
+  content {
+    padding: 20px 10px 0px 10px;
+  }
+}
 content h3 {
   margin-left: 25px;
 }
