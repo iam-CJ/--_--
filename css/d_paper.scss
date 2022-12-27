@@ -18,7 +18,7 @@ a:hover {
 	height: 3.5rem;
 	padding: 0;
 	margin: 0;
-	border: 1;
+	border: 2px solid black;
 	border-radius: 100%;
 	opacity: 0.8;
 	background: white;
@@ -40,17 +40,13 @@ a:hover {
 }
 
 .toTop-arrow::before {
-	transform: rotate(-45deg) translate(0, -50%);
+	transform: rotate(-45deg) translate(1%, -50%);
 	left: 0.4rem;
 }
 
 .toTop-arrow::after {
-	transform: rotate(45deg) translate(0, -50%);
+	transform: rotate(45deg) translate(-1%, -50%);
 	right: 0.4rem;
-}
-
-.toTop-arrow:focus {
-	outline: none;
 }
 
 html {

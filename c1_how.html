@@ -8,8 +8,6 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/c_how.css">
-    <script src="js/jquery.js"></script>
-    <script src="js/script.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/popper.min.js"></script>
     <!--Google Font-->
@@ -132,21 +130,25 @@
     
     
         <!--返回頂部的button-->
-        <button type="button" id="BackTop" class="toTop-arrow"></button>
-        <script>
-            $(function(){
-                $('#BackTop').click(function(){ 
-                    $('html,body').animate({scrollTop:0}, 0);
-                });
-                $(window).scroll(function() {
-                    if ( $(this).scrollTop() > 300 ){
-                        $('#BackTop').fadeIn(222);
-                    } else {
-                        $('#BackTop').stop().fadeOut(222);
-                    }
-                }).scroll();
-            });
+        <button type="button" id="backtop" class="toTop-arrow"></button>
+        <script> 
+            let button = document.querySelector('#backtop');
+            function backTop(){
+                window.scrollTo({
+                    top:0,
+                    behavior:'smooth'
+                })
+            }
+            function buttonShow(){
+                if(window.scrollY > 300){
+                    button.style.display = 'block'
+                }else{
+                    button.style.display = 'none'
+                }
+            }
+            button.addEventListener('click',backTop)
+            window.addEventListener('scroll',buttonShow)
         </script>
-    
+        
 </body>
 </html>
