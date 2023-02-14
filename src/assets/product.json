@@ -1,0 +1,364 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "ProductName": "Master Watercolor Procreate Brushes",
+      "ProductNameTranslate": "大師級水彩畫筆刷",
+      "ProductAuthor": "Nathan Brown",
+      "ProductType": "watercolor",
+      "ProductPrice": 20,
+      "ProductPicture": "static/image/a_water_01"
+    },
+    {
+      "id": 2,
+      "ProductName": "Watercolor & Wash Procreate Kit",
+      "ProductNameTranslate": "水彩和水洗 Procreate 套件",
+      "ProductAuthor": "Inky Pixels",
+      "ProductType": "watercolor",
+      "ProductPrice": 12,
+      "ProductPicture": "static/image/a_water_02"
+    },
+    {
+      "id": 3,
+      "ProductName": "Procreate Watercolor Kit",
+      "ProductNameTranslate": "Procreate 水彩套裝",
+      "ProductAuthor": "Drifter Studio PrintShop",
+      "ProductType": "watercolor",
+      "ProductPrice": 14,
+      "ProductPicture": "static/image/a_water_03"
+    },
+    {
+      "id": 4,
+      "ProductName": "Endless story - Procreate brushes",
+      "ProductNameTranslate": "無盡的故事 - Procreate 畫筆",
+      "ProductAuthor": "Eliza Moreno Illustration",
+      "ProductType": "watercolor",
+      "ProductPrice": 0,
+      "ProductPicture": "static/image/a_water_04"
+    },
+    {
+      "id": 5,
+      "ProductName": "Procreate Gouache Brush set",
+      "ProductNameTranslate": "Procreate 水粉畫筆套裝",
+      "ProductAuthor": "Jenteva Art",
+      "ProductType": "watercolor",
+      "ProductPrice": 19,
+      "ProductPicture": "static/image/a_water_05"
+    },
+    {
+      "id": 6,
+      "ProductName": "AquaReal Procreate Watercolor Set",
+      "ProductNameTranslate": "AquaReal Procreate 水彩套裝",
+      "ProductAuthor": "Lisa Glanz",
+      "ProductType": "watercolor",
+      "ProductPrice": 0,
+      "ProductPicture": "static/image/a_water_06"
+    },
+    {
+      "id": 7,
+      "ProductName": "Procreate - Ink & Water Stamps",
+      "ProductNameTranslate": "Procreate - 水墨印章",
+      "ProductAuthor": "DiBrush Studio",
+      "ProductType": "watercolor",
+      "ProductPrice": 9,
+      "ProductPicture": "static/image/a_water_07"
+    },
+    {
+      "id": 8,
+      "ProductName": "Watercolor Procreate Brushes",
+      "ProductNameTranslate": "水彩 Procreate 畫筆",
+      "ProductAuthor": "Faber Co.",
+      "ProductType": "watercolor",
+      "ProductPrice": 9,
+      "ProductPicture": "static/image/a_water_08"
+    },
+    {
+      "id": 9,
+      "ProductName": "Inktober Procreate brushes",
+      "ProductNameTranslate": "Inktober筆刷",
+      "ProductAuthor": "MiksKS",
+      "ProductType": "crayon",
+      "ProductPrice": 10,
+      "ProductPicture": "static/image/a_crayon_01"
+    },
+    {
+      "id": 10,
+      "ProductName": "Next Level Watercolour Workshop",
+      "ProductNameTranslate": "下一級水彩工作坊",
+      "ProductAuthor": "SketchWerx",
+      "ProductType": "crayon",
+      "ProductPrice": 25,
+      "ProductPicture": "static/image/a_crayon_02"
+    },
+    {
+      "id": 11,
+      "ProductName": "Arrows Brush",
+      "ProductNameTranslate": "箭頭筆刷",
+      "ProductAuthor": "Creative Artillery",
+      "ProductType": "crayon",
+      "ProductPrice": 15,
+      "ProductPicture": "static/image/a_crayon_03"
+    },
+    {
+      "id": 12,
+      "ProductName": "Procreate Kawaii Art Floral Brushes",
+      "ProductNameTranslate": "卡哇伊藝術花卉筆刷",
+      "ProductAuthor": "Artbykimmyw",
+      "ProductType": "crayon",
+      "ProductPrice": 0,
+      "ProductPicture": "static/image/a_crayon_04"
+    },
+    {
+      "id": 13,
+      "ProductName": "Texture Procreate Brushes",
+      "ProductNameTranslate": "紋理筆刷",
+      "ProductAuthor": "Faber Co.",
+      "ProductType": "crayon",
+      "ProductPrice": 15,
+      "ProductPicture": "static/image/a_crayon_05"
+    },
+    {
+      "id": 14,
+      "ProductName": "Procreate Pencil Case",
+      "ProductNameTranslate": "鉛筆盒",
+      "ProductAuthor": "Idle Letters",
+      "ProductType": "crayon",
+      "ProductPrice": 0,
+      "ProductPicture": "static/image/a_crayon_06"
+    },
+    {
+      "id": 15,
+      "ProductName": "PIXA: Procreate Pixel Brushes",
+      "ProductNameTranslate": "PIXA：Procreate 像素畫筆",
+      "ProductAuthor": "Delightful Design",
+      "ProductType": "crayon",
+      "ProductPrice": 18,
+      "ProductPicture": "static/image/a_crayon_07"
+    },
+    {
+      "id": 16,
+      "ProductName": "Inkling - Procreate Ink Collection",
+      "ProductNameTranslate": "Inkling - Procreate 墨水系列",
+      "ProductAuthor": "Mels Brushes",
+      "ProductType": "crayon",
+      "ProductPrice": 18,
+      "ProductPicture": "static/image/a_crayon_08"
+    },
+    {
+      "id": 17,
+      "ProductName": "Printing Press Procreate Brushes",
+      "ProductNameTranslate": "印刷機筆刷",
+      "ProductAuthor": "Pixelbuddha",
+      "ProductType": "pencil",
+      "ProductPrice": 19,
+      "ProductPicture": "static/image/a_pencil_01"
+    },
+    {
+      "id": 18,
+      "ProductName": "PROCREATE PORTRAIT CREATOR TOOLKIT",
+      "ProductNameTranslate": "創作者的肖像工具包",
+      "ProductAuthor": "AlexandraArt",
+      "ProductType": "pencil",
+      "ProductPrice": 19,
+      "ProductPicture": "static/image/a_pencil_02"
+    },
+    {
+      "id": 19,
+      "ProductName": "Chromagraph Pencils for Procreate",
+      "ProductNameTranslate": "色譜鉛筆",
+      "ProductAuthor": "True Grit Texture Supply",
+      "ProductType": "pencil",
+      "ProductPrice": 19,
+      "ProductPicture": "static/image/a_pencil_03"
+    },
+    {
+      "id": 20,
+      "ProductName": "Marker Pens for Procreate",
+      "ProductNameTranslate": "麥克筆",
+      "ProductAuthor": "Neon Wild",
+      "ProductType": "pencil",
+      "ProductPrice": 0,
+      "ProductPicture": "static/image/a_pencil_04"
+    },
+    {
+      "id": 21,
+      "ProductName": "The Grainers Brush Set",
+      "ProductNameTranslate": "Grainers畫筆套裝",
+      "ProductAuthor": "Shoutbam",
+      "ProductType": "pencil",
+      "ProductPrice": 0,
+      "ProductPicture": "static/image/a_pencil_05"
+    },
+    {
+      "id": 22,
+      "ProductName": "Peony Love watercolor patterns",
+      "ProductNameTranslate": "牡丹之戀 水彩模板",
+      "ProductAuthor": "Angele Kamp",
+      "ProductType": "pencil",
+      "ProductPrice": 28,
+      "ProductPicture": "static/image/a_pencil_06"
+    },
+    {
+      "id": 23,
+      "ProductName": "Graphite Pencils for Procreate",
+      "ProductNameTranslate": "石墨鉛筆",
+      "ProductAuthor": "Jenteva Art",
+      "ProductType": "pencil",
+      "ProductPrice": 0,
+      "ProductPicture": "static/image/a_pencil_07"
+    },
+    {
+      "id": 24,
+      "ProductName": "Procreate Art Nouveau Frames Brushes",
+      "ProductNameTranslate": "新藝術畫框畫筆",
+      "ProductAuthor": "Artbykimmyw",
+      "ProductType": "pencil",
+      "ProductPrice": 16,
+      "ProductPicture": "static/image/a_pencil_08"
+    },
+    {
+      "id": 25,
+      "ProductName": "Galaxy Brushes for Procreate",
+      "ProductNameTranslate": "Procreate 銀河筆刷",
+      "ProductAuthor": "AJ Brushes",
+      "ProductType": "special",
+      "ProductPrice": 24,
+      "ProductPicture": "static/image/a_special_01"
+    },
+    {
+      "id": 26,
+      "ProductName": "3D BRUSHES PROCREATE SET",
+      "ProductNameTranslate": "3D畫筆套裝",
+      "ProductAuthor": "AlexandraArt",
+      "ProductType": "special",
+      "ProductPrice": 16,
+      "ProductPicture": "static/image/a_special_02"
+    },
+    {
+      "id": 27,
+      "ProductName": "Soap Bubbles Procreate Brushes",
+      "ProductNameTranslate": "肥皂泡泡筆刷",
+      "ProductAuthor": "Pixelbuddha",
+      "ProductType": "special",
+      "ProductPrice": 0,
+      "ProductPicture": "static/image/a_special_03"
+    },
+    {
+      "id": 28,
+      "ProductName": "OIL LANDSCAPE PROCREATE BRUSHES KIT",
+      "ProductNameTranslate": "油畫風景畫筆套裝",
+      "ProductAuthor": "AlexandraArt",
+      "ProductType": "special",
+      "ProductPrice": 20,
+      "ProductPicture": "static/image/a_special_04"
+    },
+    {
+      "id": 29,
+      "ProductName": "60 Foliage & Grass Procreate brushes",
+      "ProductNameTranslate": "60個枝葉與草的筆刷",
+      "ProductAuthor": "Eldar Zakirov's",
+      "ProductType": "special",
+      "ProductPrice": 14,
+      "ProductPicture": "static/image/a_special_05"
+    },
+    {
+      "id": 30,
+      "ProductName": "Snow Procreate Brushes",
+      "ProductNameTranslate": "雪花筆刷",
+      "ProductAuthor": "Andrew Skoch Design",
+      "ProductType": "special",
+      "ProductPrice": 11,
+      "ProductPicture": "static/image/a_special_06"
+    },
+    {
+      "id": 31,
+      "ProductName": "Tree Stamp Botanical Tropical Nature",
+      "ProductNameTranslate": "自然熱帶植物印章",
+      "ProductAuthor": "ArtPrintBabe",
+      "ProductType": "special",
+      "ProductPrice": 9,
+      "ProductPicture": "static/image/a_special_07"
+    },
+    {
+      "id": 32,
+      "ProductName": "Procreate stone texture brushes",
+      "ProductNameTranslate": "石頭紋理筆刷",
+      "ProductAuthor": "PDknyStudio",
+      "ProductType": "special",
+      "ProductPrice": 9,
+      "ProductPicture": "static/image/a_special_08"
+    },
+    {
+      "id": 33,
+      "ProductName": "Smooth Notebook Paper",
+      "ProductNameTranslate": "光滑的筆記本紙",
+      "ProductAuthor": "匿名",
+      "ProductType": "paper",
+      "ProductPrice": 5,
+      "ProductPicture": "static/image/d_paper_01"
+    },
+    {
+      "id": 34,
+      "ProductName": "Leonardo’s Sketchbook",
+      "ProductNameTranslate": "萊昂納多的速寫本",
+      "ProductAuthor": "匿名",
+      "ProductType": "paper",
+      "ProductPrice": 5,
+      "ProductPicture": "static/image/d_paper_02"
+    },
+    {
+      "id": 35,
+      "ProductName": "Handmade Cotton Paper",
+      "ProductNameTranslate": "手工棉紙",
+      "ProductAuthor": "匿名",
+      "ProductType": "paper",
+      "ProductPrice": 5,
+      "ProductPicture": "static/image/d_paper_03"
+    },
+    {
+      "id": 36,
+      "ProductName": "Grungy Canvas",
+      "ProductNameTranslate": "骯髒的畫布",
+      "ProductAuthor": "匿名",
+      "ProductType": "paper",
+      "ProductPrice": 5,
+      "ProductPicture": "static/image/d_paper_04"
+    },
+    {
+      "id": 37,
+      "ProductName": "Aged Parchment",
+      "ProductNameTranslate": "陳年羊皮紙",
+      "ProductAuthor": "匿名",
+      "ProductType": "paper",
+      "ProductPrice": 5,
+      "ProductPicture": "static/image/d_paper_05"
+    },
+    {
+      "id": 38,
+      "ProductName": "Vellum Sketchbook Paper",
+      "ProductNameTranslate": "牛皮素描紙",
+      "ProductAuthor": "匿名",
+      "ProductType": "paper",
+      "ProductPrice": 5,
+      "ProductPicture": "static/image/d_paper_06"
+    },
+    {
+      "id": 39,
+      "ProductName": "Cold Pressed Off White",
+      "ProductNameTranslate": "冷壓灰白色紙",
+      "ProductAuthor": "匿名",
+      "ProductType": "paper",
+      "ProductPrice": 5,
+      "ProductPicture": "static/image/d_paper_07"
+    },
+    {
+      "id": 40,
+      "ProductName": "Laid Cream Pastel Paper",
+      "ProductNameTranslate": "鋪設奶油粉彩紙",
+      "ProductAuthor": "匿名",
+      "ProductType": "paper",
+      "ProductPrice": 5,
+      "ProductPicture": "static/image/d_paper_08"
+    }
+  ]
+}
